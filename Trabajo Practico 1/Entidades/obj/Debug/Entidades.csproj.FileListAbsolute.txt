@@ -1,0 +1,12 @@
+C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\Programación II - Laboratorio II\Falcioni.FacundoTPLabII\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\Programación II - Laboratorio II\Falcioni.FacundoTPLabII\Entidades\bin\Debug\Entidades.dll
+C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\Programación II - Laboratorio II\Falcioni.FacundoTPLabII\Entidades\bin\Debug\Entidades.pdb
+C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\Programación II - Laboratorio II\Falcioni.FacundoTPLabII\Entidades\obj\Debug\Entidades.dll
+C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\Programación II - Laboratorio II\Falcioni.FacundoTPLabII\Entidades\obj\Debug\Entidades.pdb
+C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\Programación II - Laboratorio II\Falcioni.FacundoTPLabII\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache
+C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\Programación II - Laboratorio II\Falcioni.FacundoTPLabII\tp_laboratorio_2\Trabajo Practico 1\Entidades\bin\Debug\Entidades.dll
+C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\Programación II - Laboratorio II\Falcioni.FacundoTPLabII\tp_laboratorio_2\Trabajo Practico 1\Entidades\bin\Debug\Entidades.pdb
+C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\Programación II - Laboratorio II\Falcioni.FacundoTPLabII\tp_laboratorio_2\Trabajo Practico 1\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache
+C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\Programación II - Laboratorio II\Falcioni.FacundoTPLabII\tp_laboratorio_2\Trabajo Practico 1\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\Programación II - Laboratorio II\Falcioni.FacundoTPLabII\tp_laboratorio_2\Trabajo Practico 1\Entidades\obj\Debug\Entidades.dll
+C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\Programación II - Laboratorio II\Falcioni.FacundoTPLabII\tp_laboratorio_2\Trabajo Practico 1\Entidades\obj\Debug\Entidades.pdb
