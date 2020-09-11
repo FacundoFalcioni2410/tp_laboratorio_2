@@ -29,26 +29,26 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormCalculadora));
-            this.btnOperar = new System.Windows.Forms.Button();
+            this.BtnOperar = new System.Windows.Forms.Button();
             this.comboOperador = new System.Windows.Forms.ComboBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.btnLimpiar = new System.Windows.Forms.Button();
-            this.btnCerrar = new System.Windows.Forms.Button();
-            this.btnDecimalABinario = new System.Windows.Forms.Button();
-            this.btnBinarioADecimal = new System.Windows.Forms.Button();
+            this.BtnLimpiar = new System.Windows.Forms.Button();
+            this.BtnCerrar = new System.Windows.Forms.Button();
+            this.BtnDecimalABinario = new System.Windows.Forms.Button();
+            this.BtnBinarioADecimal = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // btnOperar
+            // BtnOperar
             // 
-            this.btnOperar.Location = new System.Drawing.Point(96, 198);
-            this.btnOperar.Name = "btnOperar";
-            this.btnOperar.Size = new System.Drawing.Size(168, 71);
-            this.btnOperar.TabIndex = 0;
-            this.btnOperar.Text = "Operar";
-            this.btnOperar.UseVisualStyleBackColor = true;
-            this.btnOperar.Click += new System.EventHandler(this.btnOperar_Click);
+            this.BtnOperar.Location = new System.Drawing.Point(96, 198);
+            this.BtnOperar.Name = "BtnOperar";
+            this.BtnOperar.Size = new System.Drawing.Size(168, 71);
+            this.BtnOperar.TabIndex = 0;
+            this.BtnOperar.Text = "Operar";
+            this.BtnOperar.UseVisualStyleBackColor = true;
+            this.BtnOperar.Click += new System.EventHandler(this.BtnOperar_Click);
             // 
             // comboOperador
             // 
@@ -62,7 +62,6 @@
             this.comboOperador.Name = "comboOperador";
             this.comboOperador.Size = new System.Drawing.Size(164, 21);
             this.comboOperador.TabIndex = 1;
-            this.comboOperador.Text = "Operador";
             // 
             // textBox1
             // 
@@ -73,50 +72,50 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(551, 94);
+            this.textBox2.Location = new System.Drawing.Point(575, 94);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(144, 20);
             this.textBox2.TabIndex = 4;
             // 
-            // btnLimpiar
+            // BtnLimpiar
             // 
-            this.btnLimpiar.Location = new System.Drawing.Point(327, 198);
-            this.btnLimpiar.Name = "btnLimpiar";
-            this.btnLimpiar.Size = new System.Drawing.Size(168, 71);
-            this.btnLimpiar.TabIndex = 5;
-            this.btnLimpiar.Text = "Limpiar";
-            this.btnLimpiar.UseVisualStyleBackColor = true;
-            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
+            this.BtnLimpiar.Location = new System.Drawing.Point(327, 198);
+            this.BtnLimpiar.Name = "BtnLimpiar";
+            this.BtnLimpiar.Size = new System.Drawing.Size(168, 71);
+            this.BtnLimpiar.TabIndex = 5;
+            this.BtnLimpiar.Text = "Limpiar";
+            this.BtnLimpiar.UseVisualStyleBackColor = true;
+            this.BtnLimpiar.Click += new System.EventHandler(this.BtnLimpiar_Click);
             // 
-            // btnCerrar
+            // BtnCerrar
             // 
-            this.btnCerrar.Location = new System.Drawing.Point(551, 198);
-            this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(168, 71);
-            this.btnCerrar.TabIndex = 6;
-            this.btnCerrar.Text = "Cerrar";
-            this.btnCerrar.UseVisualStyleBackColor = true;
-            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
+            this.BtnCerrar.Location = new System.Drawing.Point(551, 198);
+            this.BtnCerrar.Name = "BtnCerrar";
+            this.BtnCerrar.Size = new System.Drawing.Size(168, 71);
+            this.BtnCerrar.TabIndex = 6;
+            this.BtnCerrar.Text = "Cerrar";
+            this.BtnCerrar.UseVisualStyleBackColor = true;
+            this.BtnCerrar.Click += new System.EventHandler(this.BtnCerrar_Click);
             // 
-            // btnDecimalABinario
+            // BtnDecimalABinario
             // 
-            this.btnDecimalABinario.Location = new System.Drawing.Point(96, 293);
-            this.btnDecimalABinario.Name = "btnDecimalABinario";
-            this.btnDecimalABinario.Size = new System.Drawing.Size(285, 71);
-            this.btnDecimalABinario.TabIndex = 7;
-            this.btnDecimalABinario.Text = "Convertir a binario";
-            this.btnDecimalABinario.UseVisualStyleBackColor = true;
-            this.btnDecimalABinario.Click += new System.EventHandler(this.btnDecimalABinario_Click);
+            this.BtnDecimalABinario.Location = new System.Drawing.Point(96, 293);
+            this.BtnDecimalABinario.Name = "BtnDecimalABinario";
+            this.BtnDecimalABinario.Size = new System.Drawing.Size(285, 71);
+            this.BtnDecimalABinario.TabIndex = 7;
+            this.BtnDecimalABinario.Text = "Convertir a binario";
+            this.BtnDecimalABinario.UseVisualStyleBackColor = true;
+            this.BtnDecimalABinario.Click += new System.EventHandler(this.BtnDecimalABinario_Click);
             // 
-            // btnBinarioADecimal
+            // BtnBinarioADecimal
             // 
-            this.btnBinarioADecimal.Location = new System.Drawing.Point(434, 293);
-            this.btnBinarioADecimal.Name = "btnBinarioADecimal";
-            this.btnBinarioADecimal.Size = new System.Drawing.Size(285, 71);
-            this.btnBinarioADecimal.TabIndex = 8;
-            this.btnBinarioADecimal.Text = "Convertir a decimal";
-            this.btnBinarioADecimal.UseVisualStyleBackColor = true;
-            this.btnBinarioADecimal.Click += new System.EventHandler(this.btnBinarioADecimal_Click);
+            this.BtnBinarioADecimal.Location = new System.Drawing.Point(434, 293);
+            this.BtnBinarioADecimal.Name = "BtnBinarioADecimal";
+            this.BtnBinarioADecimal.Size = new System.Drawing.Size(285, 71);
+            this.BtnBinarioADecimal.TabIndex = 8;
+            this.BtnBinarioADecimal.Text = "Convertir a decimal";
+            this.BtnBinarioADecimal.UseVisualStyleBackColor = true;
+            this.BtnBinarioADecimal.Click += new System.EventHandler(this.BtnBinarioADecimal_Click);
             // 
             // label1
             // 
@@ -133,14 +132,14 @@
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.btnBinarioADecimal);
-            this.Controls.Add(this.btnDecimalABinario);
-            this.Controls.Add(this.btnCerrar);
-            this.Controls.Add(this.btnLimpiar);
+            this.Controls.Add(this.BtnBinarioADecimal);
+            this.Controls.Add(this.BtnDecimalABinario);
+            this.Controls.Add(this.BtnCerrar);
+            this.Controls.Add(this.BtnLimpiar);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.comboOperador);
-            this.Controls.Add(this.btnOperar);
+            this.Controls.Add(this.BtnOperar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
@@ -155,14 +154,14 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btnOperar;
+        private System.Windows.Forms.Button BtnOperar;
         private System.Windows.Forms.ComboBox comboOperador;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button btnLimpiar;
-        private System.Windows.Forms.Button btnCerrar;
-        private System.Windows.Forms.Button btnDecimalABinario;
-        private System.Windows.Forms.Button btnBinarioADecimal;
+        private System.Windows.Forms.Button BtnLimpiar;
+        private System.Windows.Forms.Button BtnCerrar;
+        private System.Windows.Forms.Button BtnDecimalABinario;
+        private System.Windows.Forms.Button BtnBinarioADecimal;
         private System.Windows.Forms.Label label1;
     }
 }

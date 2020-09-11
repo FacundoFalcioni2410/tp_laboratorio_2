@@ -10,7 +10,6 @@ namespace Entidades
 
         private double ValidarNumero(string strNumero)
         {
-            
             double num;
 
             double.TryParse(strNumero, out num);
@@ -90,7 +89,7 @@ namespace Entidades
         {
             string cadena = "Valor invalido";
 
-            int entero = Convert.ToInt32(numero);
+            long entero = (long)numero;
 
             if(entero > 0)
             {
@@ -98,7 +97,7 @@ namespace Entidades
             }
             
             return cadena;
-        }
+         }
 
         public static double BinarioDecimal(string binario)
         {

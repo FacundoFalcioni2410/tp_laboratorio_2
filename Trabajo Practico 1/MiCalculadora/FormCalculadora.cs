@@ -18,7 +18,7 @@ namespace MiCalculadora
             InitializeComponent();
         }
 
-        private void btnLimpiar_Click(object sender, EventArgs e)
+        private void BtnLimpiar_Click(object sender, EventArgs e)
         {
             Limpiar();
         }
@@ -32,21 +32,12 @@ namespace MiCalculadora
             label1.Text = "";
         }
 
-        private void btnCerrar_Click(object sender, EventArgs e)
+        private void BtnCerrar_Click(object sender, EventArgs e)
         {
             Close();
         }
 
-        private void btnDecimalABinario_Click(object sender, EventArgs e)
-        {
-            string numeroBinario = label1.Text;
-            double numeroAConvertir = Convert.ToDouble(label1.Text);
-            numeroBinario = Numero.DecimalBinario(numeroAConvertir);
-
-            label1.Text = numeroBinario;
-        }
-
-        private void btnOperar_Click(object sender, EventArgs e)
+        private void BtnOperar_Click(object sender, EventArgs e)
         {
             string resultado = Convert.ToString(Operar(textBox1.Text, textBox2.Text, comboOperador.Text));
             label1.Text = resultado;
@@ -65,14 +56,23 @@ namespace MiCalculadora
             return resultado;
         }
 
-        private void btnBinarioADecimal_Click(object sender, EventArgs e)
+        private void BtnDecimalABinario_Click(object sender, EventArgs e)
         {
-            string numero = label1.Text;
-            double numeroConvertido;
+            double numero = Convert.ToDouble(textBox1.Text);
+            string binario;
 
-            numeroConvertido = Numero.BinarioDecimal(numero);
+            binario = Numero.DecimalBinario(numero);
 
-            label1.Text = Convert.ToString(numeroConvertido);
+            label1.Text = binario;
+        }
+
+        private void BtnBinarioADecimal_Click(object sender, EventArgs e)
+        {
+            double binario = Numero.BinarioDecimal(textBox1.Text);
+            string strBinario;
+            strBinario = Convert.ToString(binario);
+
+            label1.Text = strBinario;
         }
     }
 }
