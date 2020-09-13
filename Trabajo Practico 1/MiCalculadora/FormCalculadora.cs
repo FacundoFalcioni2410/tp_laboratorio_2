@@ -50,7 +50,6 @@ namespace MiCalculadora
             Numero n1 = new Numero(numero1);
             Numero n2 = new Numero(numero2);
 
-
             resultado = Calculadora.Operar(n1, n2, operador);
 
             return resultado;
@@ -58,19 +57,36 @@ namespace MiCalculadora
 
         private void BtnDecimalABinario_Click(object sender, EventArgs e)
         {
-            double numero = Convert.ToDouble(textBox1.Text);
+            double numero;
             string binario;
-
-            binario = Numero.DecimalBinario(numero);
-            label1.Text = binario;
+            
+            if (textBox1.Text.Length > 0)
+            {
+                numero = Convert.ToDouble(textBox1.Text);
+                binario = Numero.DecimalBinario(numero);
+                label1.Text = binario;
+            }
+            else
+            {
+                label1.Text = "Ingrese un numero a convertir";
+            }
         }
 
         private void BtnBinarioADecimal_Click(object sender, EventArgs e)
         {
-            double binario = Numero.BinarioDecimal(textBox1.Text);
+            double binario;
             string strBinario;
-            strBinario = Convert.ToString(binario);
-            label1.Text = strBinario;
+
+            if(textBox1.Text.Length > 0)
+            {
+                binario = Numero.BinarioDecimal(textBox1.Text);
+                strBinario = Convert.ToString(binario);
+                label1.Text = strBinario;
+            }
+            else
+            {
+                label1.Text = "Ingrese un numero a convertir";
+            }
         }
     }
 }
