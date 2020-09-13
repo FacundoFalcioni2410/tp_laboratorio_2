@@ -10,11 +10,11 @@ namespace Entidades
 
         private double ValidarNumero(string strNumero)
         {
-            double num;
+            double numero;
 
-            double.TryParse(strNumero, out num);
+            double.TryParse(strNumero, out numero);
 
-            return num;
+            return numero;
         }
 
         public string SetNumero
@@ -102,7 +102,6 @@ namespace Entidades
         public static double BinarioDecimal(string binario)
         {
             char[] array = binario.ToCharArray();
-            // Invertido pues los valores van incrementandose de derecha a izquierda: 16-8-4-2-1
             Array.Reverse(array);
             double suma = 0;
 
@@ -112,7 +111,6 @@ namespace Entidades
                 {
                     if (array[i] == '1')
                     {
-                        // Usamos la potencia de 2, según la posición
                         suma += Math.Pow(2, i);
                     }
                 }

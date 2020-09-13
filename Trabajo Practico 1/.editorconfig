@@ -1,0 +1,4 @@
+﻿[*.cs]
+
+# IDE0018: Declaración de variables alineada
+csharp_style_inlined_variable_declaration = true:none

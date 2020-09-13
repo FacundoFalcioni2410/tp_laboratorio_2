@@ -51,7 +51,7 @@ namespace MiCalculadora
             Numero n2 = new Numero(numero2);
 
 
-            resultado = Calculadora.Operar(n1, n2,operador);
+            resultado = Calculadora.Operar(n1, n2, operador);
 
             return resultado;
         }
@@ -62,7 +62,6 @@ namespace MiCalculadora
             string binario;
 
             binario = Numero.DecimalBinario(numero);
-
             label1.Text = binario;
         }
 
@@ -71,7 +70,6 @@ namespace MiCalculadora
             double binario = Numero.BinarioDecimal(textBox1.Text);
             string strBinario;
             strBinario = Convert.ToString(binario);
-
             label1.Text = strBinario;
         }
     }

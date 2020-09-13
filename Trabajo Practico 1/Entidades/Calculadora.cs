@@ -5,45 +5,49 @@ namespace Entidades
 {
     public static class Calculadora
     {
-        private static string ValidarOperador(string operador)
+        private static string ValidarOperador(char operador)
         {
             switch (operador)
             {
-                case "-":
+                case '-':
                     break;
-                case "*":
+                case '*':
                     break;
-                case "/":
+                case '/':
                     break;
                 default:
-                    operador = "+";
+                    operador = '+';
                     break;
             }
 
-            return operador;
+            return operador.ToString();
         }
 
         public static double Operar(Numero numero1, Numero numero2, string operador)
         {
-            double resultado;
-
-
-            operador = ValidarOperador(operador);
-
-            switch (operador)
+            double resultado = 0;
+            char cOperador;
+            if(operador.Length > 0)
             {
-                case "+":
-                    resultado = numero1 + numero2;
-                    break;
-                case "-":
-                    resultado = numero1 - numero2;
-                    break;
-                case "*":
-                    resultado = numero1 * numero2;
-                    break;
-                default:
-                    resultado = numero1 / numero2;
-                    break;
+                cOperador = operador[0];
+                
+                operador = ValidarOperador(cOperador);
+
+                switch (operador)
+                {
+                    case "+":
+                        resultado = numero1 + numero2;
+                        break;
+                    case "-":
+                        resultado = numero1 - numero2;
+                        break;
+                    case "*":
+                        resultado = numero1 * numero2;
+                        break;
+                    default:
+                        resultado = numero1 / numero2;
+                        break;
+                }
             }
 
             return resultado;
