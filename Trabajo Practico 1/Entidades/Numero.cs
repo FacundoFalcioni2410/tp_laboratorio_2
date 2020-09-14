@@ -89,7 +89,7 @@ namespace Entidades
         {
             string cadena = "Valor invalido";
 
-            long entero = (long)numero;
+            int entero = (int)numero;
 
             if(entero > 0)
             {
@@ -97,9 +97,14 @@ namespace Entidades
             }
             
             return cadena;
-         }
+        }
 
-        public static double BinarioDecimal(string binario)
+        public static string DecimalBinario(string numero)
+        {
+            return DecimalBinario(Convert.ToDouble(numero));
+        }
+
+        public static string BinarioDecimal(string binario)
         {
             char[] array = binario.ToCharArray();
             Array.Reverse(array);
@@ -114,13 +119,14 @@ namespace Entidades
                         suma += Math.Pow(2, i);
                     }
                 }
+                return suma.ToString();
             }
             else
             {
-                suma = -1;
+                return "Valor Invalido";
             }
 
-            return suma;
+            
         }
 
         private static bool EsBinario(char[] binario)

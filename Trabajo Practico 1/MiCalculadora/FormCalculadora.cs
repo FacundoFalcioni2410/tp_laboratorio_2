@@ -57,13 +57,11 @@ namespace MiCalculadora
 
         private void BtnDecimalABinario_Click(object sender, EventArgs e)
         {
-            double numero;
             string binario;
             
             if (textBox1.Text.Length > 0)
             {
-                numero = Convert.ToDouble(textBox1.Text);
-                binario = Numero.DecimalBinario(numero);
+                binario = Numero.DecimalBinario(textBox1.Text);
                 label1.Text = binario;
             }
             else
@@ -74,13 +72,11 @@ namespace MiCalculadora
 
         private void BtnBinarioADecimal_Click(object sender, EventArgs e)
         {
-            double binario;
             string strBinario;
 
             if(textBox1.Text.Length > 0)
             {
-                binario = Numero.BinarioDecimal(textBox1.Text);
-                strBinario = Convert.ToString(binario);
+                strBinario = Numero.BinarioDecimal(textBox1.Text);
                 label1.Text = strBinario;
             }
             else

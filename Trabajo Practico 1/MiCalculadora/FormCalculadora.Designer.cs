@@ -62,6 +62,7 @@
             "*",
             "/"});
             this.comboOperador.Location = new System.Drawing.Point(327, 122);
+            this.comboOperador.MaxLength = 1;
             this.comboOperador.Name = "comboOperador";
             this.comboOperador.Size = new System.Drawing.Size(164, 28);
             this.comboOperador.TabIndex = 1;
