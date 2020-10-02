@@ -9,12 +9,25 @@ namespace Entidades
 {
     public class Sedan : Vehiculo
     {
-        public enum ETipo { CuatroPuertas, CincoPuertas }
         ETipo tipo;
 
-        #region Constructores
+        #region Propiedades
         /// <summary>
-        /// Por defecto, TIPO será Monovolumen
+        /// Los automoviles son medianos
+        /// </summary>
+
+        public override ETamanio Tamanio //sobreescribo la propiedad abstracta de la clase Vehiculo
+        {
+            get
+            {
+                return ETamanio.Mediano;
+            }
+
+        }
+        #endregion
+
+        #region Constructores
+
         /// </summary>
         /// <param name="marca"></param>
         /// <param name="chasis"></param>
@@ -32,21 +45,6 @@ namespace Entidades
         }
         #endregion
 
-        #region Propiedades
-        /// <summary>
-        /// Los automoviles son medianos
-        /// </summary>
-
-        public override ETamanio Tamanio //sobreescribo la propiedad abstracta de la clase Vehiculo
-        {
-            get
-            {
-                return ETamanio.Mediano;
-            }
-            
-        }
-        #endregion
-
         #region Metodo
         public override sealed string Mostrar() //sobreescribo el metodo Mostrar de la clase Vehiculo
         {
@@ -60,6 +58,13 @@ namespace Entidades
             sb.AppendLine("---------------------");
 
             return sb.ToString();
+        }
+        #endregion
+
+        #region Enumerado
+        public enum ETipo 
+        { 
+            CuatroPuertas, CincoPuertas
         }
         #endregion
     }

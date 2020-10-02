@@ -8,17 +8,10 @@ namespace Entidades
 {
     public class Suv : Vehiculo
     {
-        #region Constructor
-        public Suv(EMarca marca, string chasis, ConsoleColor color)
-            : base(chasis, marca, color)
-        {
-        }
-        #endregion
+        #region Propiedades
         /// <summary>
         /// Las camionetas son grandes
-        /// </summary>
-       
-        #region Propiedades
+        /// </summary>        
         public override ETamanio Tamanio //sobreescribo la propiedad abstracta de la clase Vehiculo
         {
             get
@@ -26,6 +19,13 @@ namespace Entidades
                 return ETamanio.Grande;
             }
 
+        }
+        #endregion
+
+        #region Constructor
+        public Suv(EMarca marca, string chasis, ConsoleColor color)
+            : base(chasis, marca, color)
+        {
         }
         #endregion
 

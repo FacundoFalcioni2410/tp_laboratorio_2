@@ -11,26 +11,9 @@ namespace Entidades
     /// </summary>
     public abstract class Vehiculo
     {
-        public enum EMarca
-        {
-            Chevrolet, Ford, Renault, Toyota, BMW, Honda, HarleyDavidson
-        }
-        public enum ETamanio
-        {
-            Chico, Mediano, Grande
-        }
         EMarca marca;
         string chasis;
         ConsoleColor color;
-
-        #region Constructor
-        public Vehiculo(string chasis, EMarca marca, ConsoleColor color) //inicializa los valores
-        {
-            this.chasis = chasis;
-            this.marca = marca;
-            this.color = color;
-        }
-        #endregion
 
         #region Propiedades
         /// <summary>
@@ -41,6 +24,15 @@ namespace Entidades
             get;
         }
         #endregion
+
+        #region Constructor
+        public Vehiculo(string chasis, EMarca marca, ConsoleColor color) //inicializa los valores
+        {
+            this.chasis = chasis;
+            this.marca = marca;
+            this.color = color;
+        }
+        #endregion       
 
         #region Metodo
         /// <summary>
@@ -87,15 +79,16 @@ namespace Entidades
         {
             return !(v1.chasis == v2.chasis); //niego el '==' para retornar el '!='
         }
+        #endregion
 
-        public override bool Equals(object obj)
+        #region Enumerados
+        public enum EMarca
         {
-            return (this == (Vehiculo)obj);
+            Chevrolet, Ford, Renault, Toyota, BMW, Honda, HarleyDavidson
         }
-
-        public override int GetHashCode()
+        public enum ETamanio
         {
-            return base.GetHashCode();
+            Chico, Mediano, Grande
         }
         #endregion
     }

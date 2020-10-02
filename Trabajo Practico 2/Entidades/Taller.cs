@@ -14,10 +14,6 @@ namespace Entidades
     {
         List<Vehiculo> vehiculos;
         int espacioDisponible;
-        public enum ETipo
-        {
-            Ciclomotor, Sedan, SUV, Todos
-        }
 
         #region "Constructores"
         private Taller() //constructor privado, se encarga de inicializar la lista
@@ -137,6 +133,13 @@ namespace Entidades
             }
 
             return taller;
+        }
+        #endregion
+
+        #region Enumerado
+        public enum ETipo
+        {
+            Ciclomotor, Sedan, SUV, Todos
         }
         #endregion
     }
