@@ -9,6 +9,7 @@ namespace Entidades
 {
     /// <summary>
     /// No podrá tener clases heredadas.
+    /// Clase Taller contiene los distintos vehiculos
     /// </summary>
     public sealed class Taller
     {
@@ -84,7 +85,7 @@ namespace Entidades
         }
         #endregion
 
-        #region "Operadores"
+        #region "Sobrecarga de operadores"
         /// <summary>
         /// Agregará un elemento a la lista
         /// </summary>

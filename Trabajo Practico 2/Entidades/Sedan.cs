@@ -7,6 +7,9 @@ using System.Drawing;
 
 namespace Entidades
 {
+    /// <summary>
+    /// Tipo de vehiculo SEDAN
+    /// </summary>
     public class Sedan : Vehiculo
     {
         ETipo tipo;

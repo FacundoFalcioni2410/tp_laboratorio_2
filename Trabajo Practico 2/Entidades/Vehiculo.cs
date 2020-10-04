@@ -8,6 +8,7 @@ namespace Entidades
 {
     /// <summary>
     /// La clase Vehiculo no deberá permitir que se instancien elementos de este tipo.
+    /// Clase vehiculo general
     /// </summary>
     public abstract class Vehiculo
     {

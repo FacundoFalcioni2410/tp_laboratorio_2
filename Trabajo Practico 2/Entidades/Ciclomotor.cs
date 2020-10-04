@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
+    /// <summary>
+    /// Tipo de vehiculo CICLOMOTOR
+    /// </summary>
     public class Ciclomotor : Vehiculo
     {
         #region Propiedades

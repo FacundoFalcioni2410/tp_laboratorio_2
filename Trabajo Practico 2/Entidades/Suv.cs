@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
+    /// <summary>
+    /// Tipo de vehiculo SUV
+    /// </summary>
     public class Suv : Vehiculo
     {
         #region Propiedades
