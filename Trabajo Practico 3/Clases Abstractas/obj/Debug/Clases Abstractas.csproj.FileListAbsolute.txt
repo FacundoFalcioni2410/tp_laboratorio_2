@@ -1,0 +1,9 @@
+C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\Programación II - Laboratorio II\Falcioni.Facundo.2A.TP3\Clases Abstractas\bin\Debug\Clases Abstractas.dll
+C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\Programación II - Laboratorio II\Falcioni.Facundo.2A.TP3\Clases Abstractas\bin\Debug\Clases Abstractas.pdb
+C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\Programación II - Laboratorio II\Falcioni.Facundo.2A.TP3\Clases Abstractas\bin\Debug\Excepciones.dll
+C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\Programación II - Laboratorio II\Falcioni.Facundo.2A.TP3\Clases Abstractas\bin\Debug\Excepciones.pdb
+C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\Programación II - Laboratorio II\Falcioni.Facundo.2A.TP3\Clases Abstractas\obj\Debug\Clases Abstractas.csprojAssemblyReference.cache
+C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\Programación II - Laboratorio II\Falcioni.Facundo.2A.TP3\Clases Abstractas\obj\Debug\Clases Abstractas.csproj.CoreCompileInputs.cache
+C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\Programación II - Laboratorio II\Falcioni.Facundo.2A.TP3\Clases Abstractas\obj\Debug\Clases Abstractas.csproj.CopyComplete
+C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\Programación II - Laboratorio II\Falcioni.Facundo.2A.TP3\Clases Abstractas\obj\Debug\Clases Abstractas.dll
+C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\Programación II - Laboratorio II\Falcioni.Facundo.2A.TP3\Clases Abstractas\obj\Debug\Clases Abstractas.pdb
