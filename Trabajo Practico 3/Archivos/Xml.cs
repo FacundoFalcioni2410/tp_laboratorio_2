@@ -38,7 +38,7 @@ namespace Archivos
 
         public bool Leer(string archivo, out T datos)
         {
-            bool leido = false;
+            bool leido;
             datos = default;
 
             XmlTextReader reader = new XmlTextReader(archivo);

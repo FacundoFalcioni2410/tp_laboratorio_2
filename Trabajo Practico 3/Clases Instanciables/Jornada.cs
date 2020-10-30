@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using Archivos;
 
-namespace Clases_Instanciables
+namespace EntidadesInstanciables
 {
     public class Jornada
     {
@@ -54,18 +55,28 @@ namespace Clases_Instanciables
             this.alumnos = new List<Alumno>();
         }
 
-        public Jornada(Universidad.EClases clase, Profesor instructor)
+        public Jornada(Universidad.EClases clase, Profesor instructor) : this()
         {
             this.clase = clase;
             this.instructor = instructor;
         }
 
 
-        public bool Guardar(Jornada jornada)
+        public static bool Guardar(Jornada jornada)
         {
             Texto texto = new Texto();
 
             return texto.Guardar("Jornada.txt", jornada.ToString());
+        }
+
+        public static string Leer()
+        {
+            Texto texto = new Texto();
+            string salida;
+
+            texto.Leer("Jornada.txt", out salida);
+
+            return salida;           
         }
 
         public static bool operator ==(Jornada j, Alumno a)
@@ -89,11 +100,11 @@ namespace Clases_Instanciables
         {
             bool flag = false;
 
-            if((object)j != null && (object)a != null)
+            if((object)j != null)
             {
                 foreach(Alumno auxA in j.alumnos)
                 {
-                    if(auxA == a)
+                    if(auxA.Equals(a))
                     {
                         flag = true;
                         break;
@@ -113,15 +124,14 @@ namespace Clases_Instanciables
         {
             StringBuilder sb = new StringBuilder();
 
-            foreach(Alumno auxA in this.alumnos)
+            sb.AppendLine("JORNADA:");
+            sb.AppendFormat("CLASE DE {0} POR {1}\n",this.clase.ToString(),this.instructor.ToString());
+
+            sb.AppendLine("ALUMNOS:");
+            foreach (Alumno auxA in this.alumnos)
             {
                 sb.Append(auxA.ToString());
             }
-
-            sb.AppendLine(this.clase.ToString());
-            sb.AppendLine(this.instructor.ToString());
-
-
             return sb.ToString();
         }
     }

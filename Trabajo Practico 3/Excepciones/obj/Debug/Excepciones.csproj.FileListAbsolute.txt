@@ -4,3 +4,9 @@ C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\Programación II - Labo
 C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\Programación II - Laboratorio II\Falcioni.Facundo.2A.TP3\Excepciones\obj\Debug\Excepciones.csproj.CoreCompileInputs.cache
 C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\Programación II - Laboratorio II\Falcioni.Facundo.2A.TP3\Excepciones\obj\Debug\Excepciones.dll
 C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\Programación II - Laboratorio II\Falcioni.Facundo.2A.TP3\Excepciones\obj\Debug\Excepciones.pdb
+C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\Programación II - Laboratorio II\tp_laboratorio_2\Trabajo Practico 3\Excepciones\bin\Debug\Excepciones.dll
+C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\Programación II - Laboratorio II\tp_laboratorio_2\Trabajo Practico 3\Excepciones\bin\Debug\Excepciones.pdb
+C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\Programación II - Laboratorio II\tp_laboratorio_2\Trabajo Practico 3\Excepciones\obj\Debug\Excepciones.csprojAssemblyReference.cache
+C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\Programación II - Laboratorio II\tp_laboratorio_2\Trabajo Practico 3\Excepciones\obj\Debug\Excepciones.csproj.CoreCompileInputs.cache
+C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\Programación II - Laboratorio II\tp_laboratorio_2\Trabajo Practico 3\Excepciones\obj\Debug\Excepciones.dll
+C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\Programación II - Laboratorio II\tp_laboratorio_2\Trabajo Practico 3\Excepciones\obj\Debug\Excepciones.pdb

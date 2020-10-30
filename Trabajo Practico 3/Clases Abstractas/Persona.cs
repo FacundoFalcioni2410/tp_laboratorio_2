@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 using System.Xml.Schema;
 using System.Xml.Serialization;
 
-namespace Clases_Abstractas
+namespace EntidadesAbstractas
 {
     [XmlInclude(typeof(Universitario))]
     public abstract class Persona
@@ -34,7 +34,19 @@ namespace Clases_Abstractas
             }
             set
             {
-                this.apellido = value;
+                this.apellido = ValidarNombreApellido(value);
+            }
+        }
+
+        public string Nombre
+        {
+            get
+            {
+                return this.nombre;
+            }
+            set
+            {
+                this.nombre = ValidarNombreApellido(value);
             }
         }
 
@@ -106,7 +118,7 @@ namespace Clases_Abstractas
                 }
                 else
                 {
-                    throw new NacionalidadInvalidaException();
+                    throw new NacionalidadInvalidaException("La nacionalidad no coincide con el número DNI");
                 }
             }
             else
@@ -117,7 +129,7 @@ namespace Clases_Abstractas
                 }
                 else
                 {
-                    throw new NacionalidadInvalidaException();
+                    throw new NacionalidadInvalidaException("La nacionalidad no coincide con el número DNI");
                 }
             }
         }
@@ -135,7 +147,7 @@ namespace Clases_Abstractas
                 {
                     if (!char.IsDigit(dato[i]))
                     {
-                        throw new DniInvalidoException();
+                        throw new DniInvalidoException("El DNI debe contener solo digitos");
                     }
                 }
 
@@ -160,7 +172,7 @@ namespace Clases_Abstractas
 
                 if(noLetra)
                 {
-                    dato = "Error al ingresar nombre";
+                    dato = "";
                     break;
                 }
             }

@@ -1,13 +1,13 @@
-﻿using Clases_Abstractas;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
-using static Clases_Instanciables.Universidad;
+using static EntidadesInstanciables.Universidad;
+using EntidadesAbstractas;
 
-namespace Clases_Instanciables
+namespace EntidadesInstanciables
 {
     public class Profesor : Universitario
     {
@@ -37,7 +37,7 @@ namespace Clases_Instanciables
         {
            // for(int i = 0; i < 2; i++)
            // {
-                this.clasesDelDia.Enqueue((Universidad.EClases)Enum.Parse(typeof(Universidad.EClases),random.Next(0,3).ToString()));
+                this.clasesDelDia.Enqueue((EClases)Enum.Parse(typeof(EClases),random.Next(0,3).ToString()));
 
                 /*switch(Profesor.random.Next(1,4))
                 {
@@ -67,7 +67,7 @@ namespace Clases_Instanciables
             {
                 sb.AppendLine(auxC.ToString());
             }
-
+            
             return sb.ToString();
         }
 
@@ -76,6 +76,7 @@ namespace Clases_Instanciables
             StringBuilder sb = new StringBuilder();
 
             sb.Append(base.MostrarDatos());
+            sb.AppendLine(ParticiparEnClase());
 
             return sb.ToString();
         }
@@ -86,7 +87,7 @@ namespace Clases_Instanciables
 
             if((object)i != null && (object)clase != null)
             {
-                foreach(Universidad.EClases auxC in i.clasesDelDia)
+                foreach(EClases auxC in i.clasesDelDia)
                 {
                     if(auxC == clase)
                     {

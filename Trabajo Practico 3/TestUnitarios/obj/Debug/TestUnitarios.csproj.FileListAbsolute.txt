@@ -1,0 +1,18 @@
+C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\Programación II - Laboratorio II\tp_laboratorio_2\Trabajo Practico 3\TestUnitarios\bin\Debug\TestUnitarios.dll
+C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\Programación II - Laboratorio II\tp_laboratorio_2\Trabajo Practico 3\TestUnitarios\bin\Debug\TestUnitarios.pdb
+C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\Programación II - Laboratorio II\tp_laboratorio_2\Trabajo Practico 3\TestUnitarios\bin\Debug\Archivos.dll
+C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\Programación II - Laboratorio II\tp_laboratorio_2\Trabajo Practico 3\TestUnitarios\bin\Debug\Clases Abstractas.dll
+C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\Programación II - Laboratorio II\tp_laboratorio_2\Trabajo Practico 3\TestUnitarios\bin\Debug\Clases Instanciables.dll
+C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\Programación II - Laboratorio II\tp_laboratorio_2\Trabajo Practico 3\TestUnitarios\bin\Debug\Excepciones.dll
+C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\Programación II - Laboratorio II\tp_laboratorio_2\Trabajo Practico 3\TestUnitarios\bin\Debug\Microsoft.VisualStudio.TestTools.UITest.Extension.dll
+C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\Programación II - Laboratorio II\tp_laboratorio_2\Trabajo Practico 3\TestUnitarios\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll
+C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\Programación II - Laboratorio II\tp_laboratorio_2\Trabajo Practico 3\TestUnitarios\bin\Debug\Archivos.pdb
+C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\Programación II - Laboratorio II\tp_laboratorio_2\Trabajo Practico 3\TestUnitarios\bin\Debug\Clases Abstractas.pdb
+C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\Programación II - Laboratorio II\tp_laboratorio_2\Trabajo Practico 3\TestUnitarios\bin\Debug\Clases Instanciables.pdb
+C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\Programación II - Laboratorio II\tp_laboratorio_2\Trabajo Practico 3\TestUnitarios\bin\Debug\Excepciones.pdb
+C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\Programación II - Laboratorio II\tp_laboratorio_2\Trabajo Practico 3\TestUnitarios\bin\Debug\es\Microsoft.VisualStudio.TestTools.UITest.Extension.resources.dll
+C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\Programación II - Laboratorio II\tp_laboratorio_2\Trabajo Practico 3\TestUnitarios\obj\Debug\TestUnitarios.csprojAssemblyReference.cache
+C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\Programación II - Laboratorio II\tp_laboratorio_2\Trabajo Practico 3\TestUnitarios\obj\Debug\TestUnitarios.csproj.CoreCompileInputs.cache
+C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\Programación II - Laboratorio II\tp_laboratorio_2\Trabajo Practico 3\TestUnitarios\obj\Debug\TestUnitarios.csproj.CopyComplete
+C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\Programación II - Laboratorio II\tp_laboratorio_2\Trabajo Practico 3\TestUnitarios\obj\Debug\TestUnitarios.dll
+C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\Programación II - Laboratorio II\tp_laboratorio_2\Trabajo Practico 3\TestUnitarios\obj\Debug\TestUnitarios.pdb

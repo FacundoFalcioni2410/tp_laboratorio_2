@@ -5,3 +5,19 @@ C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\Programación II - Labo
 C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\Programación II - Laboratorio II\Falcioni.Facundo.2A.TP3\Test\obj\Debug\Test.csproj.CoreCompileInputs.cache
 C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\Programación II - Laboratorio II\Falcioni.Facundo.2A.TP3\Test\obj\Debug\Test.exe
 C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\Programación II - Laboratorio II\Falcioni.Facundo.2A.TP3\Test\obj\Debug\Test.pdb
+C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\Programación II - Laboratorio II\tp_laboratorio_2\Trabajo Practico 3\Test\obj\Debug\Test.csprojAssemblyReference.cache
+C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\Programación II - Laboratorio II\tp_laboratorio_2\Trabajo Practico 3\Test\obj\Debug\Test.csproj.CoreCompileInputs.cache
+C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\Programación II - Laboratorio II\tp_laboratorio_2\Trabajo Practico 3\Test\obj\Debug\Test.exe
+C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\Programación II - Laboratorio II\tp_laboratorio_2\Trabajo Practico 3\Test\obj\Debug\Test.pdb
+C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\Programación II - Laboratorio II\tp_laboratorio_2\Trabajo Practico 3\Test\bin\Debug\Test.exe.config
+C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\Programación II - Laboratorio II\tp_laboratorio_2\Trabajo Practico 3\Test\bin\Debug\Test.exe
+C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\Programación II - Laboratorio II\tp_laboratorio_2\Trabajo Practico 3\Test\bin\Debug\Test.pdb
+C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\Programación II - Laboratorio II\tp_laboratorio_2\Trabajo Practico 3\Test\bin\Debug\Archivos.dll
+C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\Programación II - Laboratorio II\tp_laboratorio_2\Trabajo Practico 3\Test\bin\Debug\Clases Abstractas.dll
+C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\Programación II - Laboratorio II\tp_laboratorio_2\Trabajo Practico 3\Test\bin\Debug\Clases Instanciables.dll
+C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\Programación II - Laboratorio II\tp_laboratorio_2\Trabajo Practico 3\Test\bin\Debug\Excepciones.dll
+C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\Programación II - Laboratorio II\tp_laboratorio_2\Trabajo Practico 3\Test\bin\Debug\Archivos.pdb
+C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\Programación II - Laboratorio II\tp_laboratorio_2\Trabajo Practico 3\Test\bin\Debug\Clases Abstractas.pdb
+C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\Programación II - Laboratorio II\tp_laboratorio_2\Trabajo Practico 3\Test\bin\Debug\Clases Instanciables.pdb
+C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\Programación II - Laboratorio II\tp_laboratorio_2\Trabajo Practico 3\Test\bin\Debug\Excepciones.pdb
+C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\Programación II - Laboratorio II\tp_laboratorio_2\Trabajo Practico 3\Test\obj\Debug\Test.csproj.CopyComplete

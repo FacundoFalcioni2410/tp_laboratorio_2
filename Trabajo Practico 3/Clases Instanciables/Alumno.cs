@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Clases_Abstractas;
-using static Clases_Instanciables.Universidad;
+using EntidadesAbstractas;
+using static EntidadesInstanciables.Universidad;
 
-namespace Clases_Instanciables
+namespace EntidadesInstanciables
 {
     public class Alumno : Universitario
     {
@@ -20,7 +20,7 @@ namespace Clases_Instanciables
             Becado
         }
 
-        public Alumno() : base()
+        public Alumno()
         {
         }
 
@@ -40,13 +40,20 @@ namespace Clases_Instanciables
 
             sb.Append(base.MostrarDatos());
             sb.AppendFormat("ESTADO DE CUENTA: {0}\n",this.estadoCuenta);
+            sb.Append(ParticiparEnClase());
+            sb.AppendLine();
 
             return sb.ToString();
         }
 
         protected override string ParticiparEnClase()
         {
-            return "TOMA CLASES DE: " + this.claseQueToma + "\n";
+            StringBuilder sb = new StringBuilder();
+
+            sb.AppendFormat("TOMA CLASES DE: {0}",this.claseQueToma);
+            sb.AppendLine();
+
+            return sb.ToString();
         }
 
         public override string ToString()
