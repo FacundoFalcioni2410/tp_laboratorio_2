@@ -85,7 +85,7 @@ namespace EntidadesInstanciables
         /// </summary>
         /// <param name="g">Objeto Universidad</param>
         /// <param name="a">Objeto Alumno</param>
-        /// <returns>TRUE si el objeto Alumno pertenece a la lista alumnos del objeto Universidad</returns>
+        /// <returns>Retorna true si el objeto Alumno pertenece a la lista alumnos del objeto Universidad, caso contrario retorna false</returns>
         public static bool operator ==(Universidad g, Alumno a)
         {
             bool iguales = false;
@@ -106,7 +106,7 @@ namespace EntidadesInstanciables
         /// </summary>
         /// <param name="g">Objeto Universidad</param>
         /// <param name="a">Objeto Alumno</param>
-        /// <returns>FALSE si el objeto Alumno pertenece a la lista alumnos del objeto Universidad</returns>
+        /// <returns>Retorna false si el objeto Alumno pertenece a la lista alumnos del objeto Universidad, caso contrario retorna false</returns>
         public static bool operator !=(Universidad g, Alumno a)
         {
             return !(g == a);
@@ -117,7 +117,7 @@ namespace EntidadesInstanciables
         /// </summary>
         /// <param name="g">Objeto Universidad</param>
         /// <param name="i">Objeto Profesor</param>
-        /// <returns>TRUE si el objeto AluProfesormno pertenece a la lista alumnos del objeto Universidad</returns>
+        /// <returns>Retorna true si el objeto Profesor pertenece a la lista alumnos del objeto Universidad, caso contrario retorna false</returns>
         public static bool operator ==(Universidad g, Profesor i)
         {
             bool iguales = false;
@@ -139,7 +139,7 @@ namespace EntidadesInstanciables
         /// </summary>
         /// <param name="g">Objeto Universidad</param>
         /// <param name="i">Objeto Profesor</param>
-        /// <returns>TRUE si el objeto AluProfesormno pertenece a la lista alumnos del objeto Universidad</returns>
+        /// <returns>Retorna true si el objeto Profesor no pertenece a la lista alumnos del objeto Universidad, caso contrario retorna false</returns>
         public static bool operator !=(Universidad g, Profesor i)
         {
             return !(g == i);
@@ -148,8 +148,8 @@ namespace EntidadesInstanciables
         /// <summary>
         /// Compara un objeto Universidad con un Enum EClase
         /// </summary>
-        /// <param name="u"></param>
-        /// <param name="clase"></param>
+        /// <param name="u">Objeto universidad</param>
+        /// <param name="clase">Enumerado</param>
         /// <returns>Devuelve el primer objeto Profesor de la lista profesores con la EClase clase
         /// en su atributo clasesDelDia, si no hay Proofesor lanza SinProfesorException </returns>
         public static Profesor operator ==(Universidad u, EClases clase)
@@ -174,10 +174,10 @@ namespace EntidadesInstanciables
         /// <summary>
         /// Compara un objeto Universidad con un Enum EClase
         /// </summary>
-        /// <param name="u"></param>
-        /// <param name="clase"></param>
+        /// <param name="u">Objeto universidad</param>
+        /// <param name="clase">Enumerado</param>
         /// <returns>Devuelve el primer objeto Profesor de la lista profesores que no tenga el EClase clase
-        /// en su atributo clasesDelDia, si no hay Proofesor lanza SinProfesorException</returns>
+        /// en su atributo clasesDelDia, si no hay Profesor lanza SinProfesorException</returns>
         public static Profesor operator !=(Universidad u, EClases clase)
         {
             Profesor profesor = null;
@@ -204,7 +204,8 @@ namespace EntidadesInstanciables
         /// </summary>
         /// <param name="u">Objeto Universidad</param>
         /// <param name="a">Objeto Alumno</param>
-        /// <returns>Devuelve el objeto Universidad con el Alumno agregado a la lista si no esta repetido</returns>
+        /// <returns>Devuelve el objeto Universidad con el Alumno agregado a la lista si no esta repetido
+        /// caso contrario tira AlumnoRepetidoException</returns>
         public static Universidad operator +(Universidad u, Alumno a)
         {
 
@@ -262,7 +263,7 @@ namespace EntidadesInstanciables
         /// Retorna un string con los atributos de los objetos de la lista jornadas
         /// </summary>
         /// <param name="uni">Objeto Universidad</param>
-        /// <returns>String </returns>
+        /// <returns>Un string con los datos de la universidad</returns>
         private string MostrarDatos(Universidad uni)
         {
             StringBuilder sb = new StringBuilder();
@@ -278,7 +279,7 @@ namespace EntidadesInstanciables
         /// <summary>
         /// Retorna un string con los atributos de los objetos de la lista jornadas
         /// </summary>
-        /// <returns>String</returns>
+        /// <returns>String con los datos de la universidad</returns>
         public override string ToString()
         {
             return MostrarDatos(this);
@@ -288,7 +289,7 @@ namespace EntidadesInstanciables
         /// Serializa en formato XML los atributos del objeto universidad
         /// </summary>
         /// <param name="uni">Objeto Universidad</param>
-        /// <returns>TRUE si pudo serializar el objeto</returns>
+        /// <returns>Retorna true si pudo serializar el objeto</returns>
         public static bool Guardar(Universidad uni)
         {
             Xml<Universidad> u = new Xml<Universidad>();
