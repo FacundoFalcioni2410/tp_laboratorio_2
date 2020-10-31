@@ -1,4 +1,4 @@
-﻿using Archivos;
+using Archivos;
 using Excepciones;
 using System;
 using System.Collections.Generic;
@@ -64,7 +64,7 @@ namespace EntidadesInstanciables
         {
             get
             {
-                if(this.jornada.Count > 0 && this.jornada.Count < i)
+                if (i >= 0 && i < this.Jornadas.Count)
                 {
                     return this.jornada[i];
                 }
@@ -72,11 +72,17 @@ namespace EntidadesInstanciables
                 {
                     return null;
                 }
-                
             }
             set
             {
-                this.jornada[i] = value; 
+                if (i >= 0 && i < this.Jornadas.Count)
+                {
+                    this.jornada[i] = value;
+                }
+                else if(i == this.Jornadas.Count)
+                {
+                    this.Jornadas.Add(value);
+                }
             }
         }
 
@@ -208,15 +214,22 @@ namespace EntidadesInstanciables
         /// caso contrario tira AlumnoRepetidoException</returns>
         public static Universidad operator +(Universidad u, Alumno a)
         {
-
-            if (u != a)
+            try
             {
-                u.alumnos.Add(a);
+                if (u != a)
+                {
+                    u.alumnos.Add(a);
+                }
+                else
+                {
+                    throw new AlumnoRepetidoException("Alumno Repetido");
+                }
             }
-            else
+            catch(AlumnoRepetidoException e)
             {
-                throw new AlumnoRepetidoException("Alumno Repetido");
+                Console.WriteLine(e.Message);
             }
+           
 
             return u;
         }
@@ -303,7 +316,7 @@ namespace EntidadesInstanciables
         public static Universidad Leer()
         {
             Xml<Universidad> u = new Xml<Universidad>();
-            Universidad uni;
+            Universidad uni = new Universidad();
             
             u.Leer("Universidad.xml", out uni);
             

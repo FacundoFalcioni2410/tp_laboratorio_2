@@ -11,56 +11,70 @@ namespace Archivos
 {
     public class Xml<T> : IArchivo<T>
     {
+        /// <summary>
+        /// Serializa datos a un archivo .xml
+        /// </summary>
+        /// <param name="archivo">path del archivo</param>
+        /// <param name="datos">datos a guardar</param>
+        /// <returns></returns>
         public bool Guardar(string archivo, T datos)
         {
             bool guardado = false;
 
-            XmlTextWriter writer = new XmlTextWriter(archivo,Encoding.UTF8);
-
-            if(writer != null)
+            using (XmlTextWriter writer = new XmlTextWriter(archivo, Encoding.UTF8))
             {
-                XmlSerializer ser = new XmlSerializer(typeof(T));
-
-                if(ser != null)
+                if (writer != null)
                 {
-                    ser.Serialize(writer, datos);
-                    guardado = true;
-                }
+                    XmlSerializer ser = new XmlSerializer(typeof(T));
 
-            }
-            else
-            {
-                throw new ArchivosException();
-            }
+                    if (ser != null)
+                    {
+                        ser.Serialize(writer, datos);
+                        guardado = true;
+                    }
 
-            return guardado;
-        }
-
-        public bool Leer(string archivo, out T datos)
-        {
-            bool leido;
-            datos = default;
-
-            XmlTextReader reader = new XmlTextReader(archivo);
-
-            if (reader != null)
-            {
-                XmlSerializer ser = new XmlSerializer(typeof(T));
-                if(ser != null)
-                {
-                    datos = (T)ser.Deserialize(reader);
-                    leido = true;
                 }
                 else
                 {
                     throw new ArchivosException();
                 }
-
             }
-            else
+
+            return guardado;
+        }
+
+        /// <summary>
+        /// Deserializa un archivo .xml
+        /// </summary>
+        /// <param name="archivo">path donde leer el archivo</param>
+        /// <param name="datos">donde se guardan los datos</param>
+        /// <returns></returns>
+        public bool Leer(string archivo, out T datos)
+        {
+            bool leido;
+            datos = default;
+
+            using (XmlTextReader reader = new XmlTextReader(archivo))
             {
-                throw new ArchivosException();
-            }    
+                if (reader != null)
+                {
+                    XmlSerializer ser = new XmlSerializer(typeof(T));
+                    if (ser != null)
+                    {
+                        datos = (T)ser.Deserialize(reader);
+                        leido = true;
+                    }
+                    else
+                    {
+                        throw new ArchivosException();
+                    }
+
+                }
+                else
+                {
+                    throw new ArchivosException();
+                }
+            }  
 
             return leido;
         }

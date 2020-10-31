@@ -9,6 +9,9 @@ namespace TestUnitarios
     [TestClass]
     public class UnitTest1
     {
+        /// <summary>
+        /// Comprueba que las listas de Universidad se instancien correctamente
+        /// </summary>
         [TestMethod]
         public void Verificar_Instancia_Lista()
         {
@@ -19,6 +22,9 @@ namespace TestUnitarios
             Assert.IsNotNull(uni.Jornadas);
         }
 
+        /// <summary>
+        /// Comprueba que se lance la excepcion AlumnoRepetidoException al agregar dos alumnos iguales
+        /// </summary>
         [TestMethod]
         [ExpectedException(typeof(AlumnoRepetidoException))]
         public void Verificar_AlumnoRepetidoException()
@@ -32,7 +38,9 @@ namespace TestUnitarios
             uni += b;
         }
 
-
+        /// <summary>
+        /// Comprueba que se lance la excepcion DniInvalidoException si el formato no es el correcto
+        /// </summary>
         [TestMethod]
         [ExpectedException(typeof(DniInvalidoException))]
         public void Verificar_DNIInvalidoException()

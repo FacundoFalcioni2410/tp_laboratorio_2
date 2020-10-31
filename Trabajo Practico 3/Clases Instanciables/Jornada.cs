@@ -14,6 +14,8 @@ namespace EntidadesInstanciables
         private Universidad.EClases clase;
         private Profesor instructor;
 
+        #region Propiedades
+
         public List<Alumno> Alumnos
         {
             get
@@ -50,6 +52,10 @@ namespace EntidadesInstanciables
             }
         }
 
+        #endregion
+
+        #region Constructores
+
         /// <summary>
         /// Constructor privado que inicializa la lista de Alumnos
         /// </summary>
@@ -69,6 +75,10 @@ namespace EntidadesInstanciables
             this.instructor = instructor;
         }
 
+        #endregion
+
+        #region Metodos
+
         /// <summary>
         /// Guarda los datos de la jornada en un archivo de texto
         /// </summary>
@@ -80,7 +90,6 @@ namespace EntidadesInstanciables
 
             return texto.Guardar("Jornada.txt", jornada.ToString());
         }
-
 
         /// <summary>
         /// Lee el archivo de texto jornada
@@ -95,6 +104,10 @@ namespace EntidadesInstanciables
 
             return salida;           
         }
+
+        #endregion
+
+        #region Sobrecarga de operadores
 
         /// <summary>
         /// Compara un alumno con la jornada
@@ -156,6 +169,10 @@ namespace EntidadesInstanciables
             return j;
         }
 
+        #endregion
+
+        #region Sobrecarga de metodos
+
         /// <summary>
         /// Crea un string con los datos de la jornada
         /// </summary>
@@ -174,5 +191,7 @@ namespace EntidadesInstanciables
             }
             return sb.ToString();
         }
+
+        #endregion
     }
 }
