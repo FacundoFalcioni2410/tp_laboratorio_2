@@ -17,49 +17,60 @@ namespace EntidadesInstanciables
         List<Jornada> jornada;
         List<Profesor> profesores;
 
-        /// <summary>
-        /// Inicializa una nueva instancia de la clase Universidad
-        /// </summary>
-        public Universidad()
-        {
-            this.alumnos = new List<Alumno>();
-            this.jornada = new List<Jornada>();
-            this.profesores = new List<Profesor>();
-        }
+        #region Propiedades
 
+        /// <summary>
+        /// Lectura: Devuelve la lista de alumnos de la universidad
+        /// Escritura: Asigna una lista de alumnos a la universidad
+        /// </summary>
         public List<Alumno> Alumnos
         {
             get
-            { 
+            {
                 return this.alumnos;
             }
             set
-            { 
+            {
                 this.alumnos = value;
             }
         }
+
+        /// <summary>
+        /// Lectura: Devuelve la lista de profesores de la universidad
+        /// Escritura: Asigna una lista de profesores a la universidad
+        /// </summary>
         public List<Profesor> Instructores
         {
-            get 
-            { 
-                return this.profesores; 
+            get
+            {
+                return this.profesores;
             }
             set
-            { 
-                this.profesores = value; 
+            {
+                this.profesores = value;
             }
         }
+
+        /// <summary>
+        /// Lectura: Devuelve la lista de jornadas de la universidad
+        /// Escritura: Asigna una lista de jornadas a la universidad
+        /// </summary>
         public List<Jornada> Jornadas
         {
             get
-            { 
+            {
                 return this.jornada;
             }
-            set 
-            { 
+            set
+            {
                 this.jornada = value;
             }
         }
+
+        /// <summary>
+        /// Lectura: Devuelve una jornada en el indice especificado, comprobando que sea valido
+        /// Escritura: Asigna una jornada en el indice especificado, comprobando que sea valido
+        /// </summary>
         public Jornada this[int i]
         {
             get
@@ -79,12 +90,88 @@ namespace EntidadesInstanciables
                 {
                     this.jornada[i] = value;
                 }
-                else if(i == this.Jornadas.Count)
+                else if (i == this.Jornadas.Count)
                 {
                     this.Jornadas.Add(value);
                 }
             }
         }
+
+        #endregion
+
+        #region Constructor
+        /// <summary>
+        /// Inicializa una nueva instancia de la clase Universidad
+        /// </summary>
+        public Universidad()
+        {
+            this.alumnos = new List<Alumno>();
+            this.jornada = new List<Jornada>();
+            this.profesores = new List<Profesor>();
+        }
+
+        #endregion
+
+        #region Metodos
+
+        /// <summary>
+        /// Serializa en formato XML los atributos del objeto universidad
+        /// </summary>
+        /// <param name="uni">Objeto Universidad</param>
+        /// <returns>Retorna true si pudo serializar el objeto</returns>
+        public static bool Guardar(Universidad uni)
+        {
+            Xml<Universidad> u = new Xml<Universidad>();
+            return u.Guardar("Universidad.xml", uni);
+        }
+
+        /// <summary>
+        /// Lee archivo XML y lo graba en un objeto Universidad
+        /// </summary>
+        /// <returns>Objeto Universidad</returns>
+        public static Universidad Leer()
+        {
+            Xml<Universidad> u = new Xml<Universidad>();
+            Universidad uni = new Universidad();
+
+            u.Leer("Universidad.xml", out uni);
+
+            return uni;
+        }
+
+        #endregion
+
+        #region Sobrecarga de Metodos
+
+        /// <summary>
+        /// Retorna un string con los atributos de los objetos de la lista jornadas
+        /// </summary>
+        /// <param name="uni">Objeto Universidad</param>
+        /// <returns>Un string con los datos de la universidad</returns>
+        private string MostrarDatos(Universidad uni)
+        {
+            StringBuilder sb = new StringBuilder();
+
+            foreach (Jornada auxJ in uni.jornada)
+            {
+                sb.Append(auxJ.ToString());
+            }
+
+            return sb.ToString();
+        }
+
+        /// <summary>
+        /// Retorna un string con los atributos de los objetos de la lista jornadas
+        /// </summary>
+        /// <returns>String con los datos de la universidad</returns>
+        public override string ToString()
+        {
+            return MostrarDatos(this);
+        }
+
+        #endregion
+
+        #region Sobrecarga de operadores
 
         /// <summary>
         /// Compara un objeto Universidad con un objeto Alumno
@@ -214,22 +301,14 @@ namespace EntidadesInstanciables
         /// caso contrario tira AlumnoRepetidoException</returns>
         public static Universidad operator +(Universidad u, Alumno a)
         {
-            try
+            if (u != a)
             {
-                if (u != a)
-                {
-                    u.alumnos.Add(a);
-                }
-                else
-                {
-                    throw new AlumnoRepetidoException("Alumno Repetido");
-                }
+                u.alumnos.Add(a);
             }
-            catch(AlumnoRepetidoException e)
+            else
             {
-                Console.WriteLine(e.Message);
+                throw new AlumnoRepetidoException("Alumno Repetido");
             }
-           
 
             return u;
         }
@@ -272,56 +351,7 @@ namespace EntidadesInstanciables
             return g;
         }
 
-        /// <summary>
-        /// Retorna un string con los atributos de los objetos de la lista jornadas
-        /// </summary>
-        /// <param name="uni">Objeto Universidad</param>
-        /// <returns>Un string con los datos de la universidad</returns>
-        private string MostrarDatos(Universidad uni)
-        {
-            StringBuilder sb = new StringBuilder();
-
-            foreach (Jornada auxJ in uni.jornada)
-            {
-                sb.Append(auxJ.ToString());
-            }
-
-            return sb.ToString();
-        }
-
-        /// <summary>
-        /// Retorna un string con los atributos de los objetos de la lista jornadas
-        /// </summary>
-        /// <returns>String con los datos de la universidad</returns>
-        public override string ToString()
-        {
-            return MostrarDatos(this);
-        }
-
-        /// <summary>
-        /// Serializa en formato XML los atributos del objeto universidad
-        /// </summary>
-        /// <param name="uni">Objeto Universidad</param>
-        /// <returns>Retorna true si pudo serializar el objeto</returns>
-        public static bool Guardar(Universidad uni)
-        {
-            Xml<Universidad> u = new Xml<Universidad>();
-            return u.Guardar("Universidad.xml", uni);
-        }
-
-        /// <summary>
-        /// Lee archivo XML y lo graba en un objeto Universidad
-        /// </summary>
-        /// <returns>Objeto Universidad</returns>
-        public static Universidad Leer()
-        {
-            Xml<Universidad> u = new Xml<Universidad>();
-            Universidad uni = new Universidad();
-            
-            u.Leer("Universidad.xml", out uni);
-            
-            return uni;
-        }
+        #endregion
 
     }
 }

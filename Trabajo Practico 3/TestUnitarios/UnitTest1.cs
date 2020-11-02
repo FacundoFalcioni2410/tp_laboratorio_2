@@ -32,7 +32,7 @@ namespace TestUnitarios
             Universidad uni = new Universidad();
 
             Alumno a = new Alumno(4, "Tomas", "Perez", "90234123", Persona.ENacionalidad.Extranjero, Universidad.EClases.Laboratorio);
-            Alumno b = new Alumno(4, "Tomas", "Perez", "90234123", Persona.ENacionalidad.Extranjero, Universidad.EClases.Laboratorio);
+            Alumno b = new Alumno(6, "Julian", "Diaz", "90234123", Persona.ENacionalidad.Extranjero, Universidad.EClases.Laboratorio);
 
             uni += a;
             uni += b;

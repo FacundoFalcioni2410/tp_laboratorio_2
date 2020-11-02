@@ -26,6 +26,10 @@ namespace EntidadesAbstractas
 
         #region Propiedades
 
+        /// <summary>
+        /// Lectura: Devuelve el apellido de la persona
+        /// Escritura: Asigna apellido a la persona, verificando que sea con un formato correcto
+        /// </summary>
         public string Apellido
         {
             get
@@ -38,6 +42,10 @@ namespace EntidadesAbstractas
             }
         }
 
+        /// <summary>
+        /// Lectura: Devuelve el nombre de la persona
+        /// Escritura: Asigna nombre a la persona, verificando que sea con un formato correcto
+        /// </summary>
         public string Nombre
         {
             get
@@ -50,6 +58,10 @@ namespace EntidadesAbstractas
             }
         }
 
+        /// <summary>
+        /// Lectura: Devuelve la nacionalidad de la persona
+        /// Escritura: Asigna la nacionalidad a la persona, verificando que sea con un formato correcto
+        /// </summary>
         public ENacionalidad Nacionalidad
         {
             get
@@ -62,6 +74,10 @@ namespace EntidadesAbstractas
             }
         }
 
+        /// <summary>
+        /// Lectura: Devuelve el DNI de la persona
+        /// Escritura: Asigna el DNI a la persona, verificando que el rango del DNI corresponda con la nacionalidad
+        /// </summary>
         public int DNI
         {
             get
@@ -74,6 +90,9 @@ namespace EntidadesAbstractas
             }
         }
 
+        /// <summary>
+        /// Escritura: Asigna DNI a la persona, verificando que sea con un formato correcto
+        /// </summary>
         public string StringToDni
         {
             set

@@ -10,6 +10,29 @@ namespace EntidadesAbstractas
     {
         private int legajo;
 
+        //Agrego propiedad para que pueda guardarse el atributo legajo con la deserializacion del XML ya que
+        //su atributo es privado.
+
+        #region Propiedades
+
+        /// <summary>
+        /// Lectura: Devuelve el legajo del universitario
+        /// Escritura: Asigna el legajo del universitario
+        /// </summary>
+        public int Legajo
+        {
+            get
+            {
+                return this.legajo;
+            }
+            set
+            {
+                this.legajo = value;
+            }
+        }
+
+        #endregion
+
         #region Constructores
         /// <summary>
         /// Inicializa objeto universitario con valores default
@@ -29,28 +52,6 @@ namespace EntidadesAbstractas
         public Universitario(int legajo, string nombre, string apellido, string dni, ENacionalidad nacionalidad) : base(nombre, apellido, dni, nacionalidad)
         {
             this.legajo = legajo;
-        }
-
-        #endregion
-
-        //Agrego propiedad para que pueda guardarse el atributo legajo con la deserializacion del XML ya que
-        //su atributo es privado.
-
-        #region Propiedades
-
-        /// <summary>
-        /// Propiedad de lectura y escritura del atributo legajo
-        /// </summary>
-        public int Legajo
-        {
-            get
-            {
-                return this.legajo;
-            }
-            set
-            {
-                this.legajo = value;
-            }
         }
 
         #endregion

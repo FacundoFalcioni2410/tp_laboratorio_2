@@ -16,6 +16,10 @@ namespace EntidadesInstanciables
 
         #region Propiedades
 
+        /// <summary>
+        /// Lectura: Devuelve el listado de la jornada
+        /// Escritura: Asigna una lista de jornadas a la lista
+        /// </summary>
         public List<Alumno> Alumnos
         {
             get
@@ -28,6 +32,10 @@ namespace EntidadesInstanciables
             }
         }
 
+        /// <summary>
+        /// Lectura: Devuelve la clase de la jornada
+        /// Escritura: Asigna clase a la jornada
+        /// </summary>
         public Universidad.EClases Clase
         {
             get
@@ -40,6 +48,10 @@ namespace EntidadesInstanciables
             }
         }
 
+        /// <summary>
+        /// Lectura: Devuelve el instructor de la jornada
+        /// Escritura: Asigna el instructor a la jornada
+        /// </summary>
         public Profesor Instructor
         {
             get
