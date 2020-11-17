@@ -33,7 +33,7 @@ namespace Archivos
                     }
                     else
                     {
-                        throw new ArchivosException();
+                        throw new ArchivosException("Error al guardar el archivo");
                     }
                 }
             }
@@ -61,7 +61,7 @@ namespace Archivos
             }
             else
             {
-                throw new ArchivosException();
+                throw new ArchivosException("Error al leer el archivo");
             }
 
             return leido;

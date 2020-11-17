@@ -1,0 +1,39 @@
+VENDEDORA:
+CANTIDAD: 6
+PRECIO TOTAL: 995
+<--------------------------------------------------------------------------->
+CODIGO DE COMPRA: 1
+PRODUCTO: Celular
+MARCA: Apple
+PRECIO: 175
+TIPO: Tecnologia
+<--------------------------------------------------------------------------->
+CODIGO DE COMPRA: 2
+PRODUCTO: Teclado
+MARCA: Asus
+PRECIO: 120
+TIPO: Accesorio
+<--------------------------------------------------------------------------->
+CODIGO DE COMPRA: 3
+PRODUCTO: Celular
+MARCA: Apple
+PRECIO: 175
+TIPO: Tecnologia
+<--------------------------------------------------------------------------->
+CODIGO DE COMPRA: 4
+PRODUCTO: Celular
+MARCA: Asus
+PRECIO: 175
+TIPO: Tecnologia
+<--------------------------------------------------------------------------->
+CODIGO DE COMPRA: 5
+PRODUCTO: Celular
+MARCA: Apple
+PRECIO: 175
+TIPO: Tecnologia
+<--------------------------------------------------------------------------->
+CODIGO DE COMPRA: 6
+PRODUCTO: Celular
+MARCA: Apple
+PRECIO: 175
+TIPO: Tecnologia

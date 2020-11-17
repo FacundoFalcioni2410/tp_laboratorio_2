@@ -1,0 +1,45 @@
+C:\Users\Facu Falcioni\Desktop\tp_laboratorio_2\Falcioni.Facundo.2A.TP4\TestConsola\bin\Debug\TestConsola.exe.config
+C:\Users\Facu Falcioni\Desktop\tp_laboratorio_2\Falcioni.Facundo.2A.TP4\TestConsola\bin\Debug\TestConsola.exe
+C:\Users\Facu Falcioni\Desktop\tp_laboratorio_2\Falcioni.Facundo.2A.TP4\TestConsola\bin\Debug\TestConsola.pdb
+C:\Users\Facu Falcioni\Desktop\tp_laboratorio_2\Falcioni.Facundo.2A.TP4\TestConsola\bin\Debug\Archivos.dll
+C:\Users\Facu Falcioni\Desktop\tp_laboratorio_2\Falcioni.Facundo.2A.TP4\TestConsola\bin\Debug\BaseDeDatos.exe
+C:\Users\Facu Falcioni\Desktop\tp_laboratorio_2\Falcioni.Facundo.2A.TP4\TestConsola\bin\Debug\Entidades.dll
+C:\Users\Facu Falcioni\Desktop\tp_laboratorio_2\Falcioni.Facundo.2A.TP4\TestConsola\bin\Debug\Archivos.pdb
+C:\Users\Facu Falcioni\Desktop\tp_laboratorio_2\Falcioni.Facundo.2A.TP4\TestConsola\bin\Debug\BaseDeDatos.pdb
+C:\Users\Facu Falcioni\Desktop\tp_laboratorio_2\Falcioni.Facundo.2A.TP4\TestConsola\bin\Debug\BaseDeDatos.exe.config
+C:\Users\Facu Falcioni\Desktop\tp_laboratorio_2\Falcioni.Facundo.2A.TP4\TestConsola\bin\Debug\Entidades.pdb
+C:\Users\Facu Falcioni\Desktop\tp_laboratorio_2\Falcioni.Facundo.2A.TP4\TestConsola\obj\Debug\TestConsola.csprojAssemblyReference.cache
+C:\Users\Facu Falcioni\Desktop\tp_laboratorio_2\Falcioni.Facundo.2A.TP4\TestConsola\obj\Debug\TestConsola.csproj.CoreCompileInputs.cache
+C:\Users\Facu Falcioni\Desktop\tp_laboratorio_2\Falcioni.Facundo.2A.TP4\TestConsola\obj\Debug\TestConsola.csproj.CopyComplete
+C:\Users\Facu Falcioni\Desktop\tp_laboratorio_2\Falcioni.Facundo.2A.TP4\TestConsola\obj\Debug\TestConsola.exe
+C:\Users\Facu Falcioni\Desktop\tp_laboratorio_2\Falcioni.Facundo.2A.TP4\TestConsola\obj\Debug\TestConsola.pdb
+C:\Users\Facu Falcioni\Desktop\UTN\tp_laboratorio_2\Falcioni.Facundo.2A.TP4\TestConsola\obj\Debug\TestConsola.csprojAssemblyReference.cache
+C:\Users\Facu Falcioni\Desktop\UTN\tp_laboratorio_2\Falcioni.Facundo.2A.TP4\TestConsola\obj\Debug\TestConsola.csproj.CoreCompileInputs.cache
+C:\Users\Facu Falcioni\Desktop\UTN\tp_laboratorio_2\Falcioni.Facundo.2A.TP4\TestConsola\obj\Debug\TestConsola.exe
+C:\Users\Facu Falcioni\Desktop\UTN\tp_laboratorio_2\Falcioni.Facundo.2A.TP4\TestConsola\obj\Debug\TestConsola.pdb
+C:\Users\Facu Falcioni\Desktop\UTN\tp_laboratorio_2\Falcioni.Facundo.2A.TP4\TestConsola\bin\Debug\TestConsola.exe.config
+C:\Users\Facu Falcioni\Desktop\UTN\tp_laboratorio_2\Falcioni.Facundo.2A.TP4\TestConsola\bin\Debug\TestConsola.exe
+C:\Users\Facu Falcioni\Desktop\UTN\tp_laboratorio_2\Falcioni.Facundo.2A.TP4\TestConsola\bin\Debug\TestConsola.pdb
+C:\Users\Facu Falcioni\Desktop\UTN\tp_laboratorio_2\Falcioni.Facundo.2A.TP4\TestConsola\bin\Debug\Archivos.dll
+C:\Users\Facu Falcioni\Desktop\UTN\tp_laboratorio_2\Falcioni.Facundo.2A.TP4\TestConsola\bin\Debug\BaseDeDatos.exe
+C:\Users\Facu Falcioni\Desktop\UTN\tp_laboratorio_2\Falcioni.Facundo.2A.TP4\TestConsola\bin\Debug\Entidades.dll
+C:\Users\Facu Falcioni\Desktop\UTN\tp_laboratorio_2\Falcioni.Facundo.2A.TP4\TestConsola\bin\Debug\Archivos.pdb
+C:\Users\Facu Falcioni\Desktop\UTN\tp_laboratorio_2\Falcioni.Facundo.2A.TP4\TestConsola\bin\Debug\BaseDeDatos.pdb
+C:\Users\Facu Falcioni\Desktop\UTN\tp_laboratorio_2\Falcioni.Facundo.2A.TP4\TestConsola\bin\Debug\BaseDeDatos.exe.config
+C:\Users\Facu Falcioni\Desktop\UTN\tp_laboratorio_2\Falcioni.Facundo.2A.TP4\TestConsola\bin\Debug\Entidades.pdb
+C:\Users\Facu Falcioni\Desktop\UTN\tp_laboratorio_2\Falcioni.Facundo.2A.TP4\TestConsola\obj\Debug\TestConsola.csproj.CopyComplete
+C:\Users\Facu Falcioni\Desktop\UTN\tp_laboratorio_2\Trabajo Practico 4\Falcioni.Facundo.2A.TP4\TestConsola\obj\Debug\TestConsola.csprojAssemblyReference.cache
+C:\Users\Facu Falcioni\Desktop\UTN\tp_laboratorio_2\Trabajo Practico 4\Falcioni.Facundo.2A.TP4\TestConsola\obj\Debug\TestConsola.csproj.CoreCompileInputs.cache
+C:\Users\Facu Falcioni\Desktop\UTN\tp_laboratorio_2\Trabajo Practico 4\Falcioni.Facundo.2A.TP4\TestConsola\obj\Debug\TestConsola.exe
+C:\Users\Facu Falcioni\Desktop\UTN\tp_laboratorio_2\Trabajo Practico 4\Falcioni.Facundo.2A.TP4\TestConsola\obj\Debug\TestConsola.pdb
+C:\Users\Facu Falcioni\Desktop\UTN\tp_laboratorio_2\Trabajo Practico 4\Falcioni.Facundo.2A.TP4\TestConsola\bin\Debug\TestConsola.exe.config
+C:\Users\Facu Falcioni\Desktop\UTN\tp_laboratorio_2\Trabajo Practico 4\Falcioni.Facundo.2A.TP4\TestConsola\bin\Debug\TestConsola.exe
+C:\Users\Facu Falcioni\Desktop\UTN\tp_laboratorio_2\Trabajo Practico 4\Falcioni.Facundo.2A.TP4\TestConsola\bin\Debug\TestConsola.pdb
+C:\Users\Facu Falcioni\Desktop\UTN\tp_laboratorio_2\Trabajo Practico 4\Falcioni.Facundo.2A.TP4\TestConsola\bin\Debug\Archivos.dll
+C:\Users\Facu Falcioni\Desktop\UTN\tp_laboratorio_2\Trabajo Practico 4\Falcioni.Facundo.2A.TP4\TestConsola\bin\Debug\Entidades.dll
+C:\Users\Facu Falcioni\Desktop\UTN\tp_laboratorio_2\Trabajo Practico 4\Falcioni.Facundo.2A.TP4\TestConsola\bin\Debug\WindowsForms.exe
+C:\Users\Facu Falcioni\Desktop\UTN\tp_laboratorio_2\Trabajo Practico 4\Falcioni.Facundo.2A.TP4\TestConsola\bin\Debug\Archivos.pdb
+C:\Users\Facu Falcioni\Desktop\UTN\tp_laboratorio_2\Trabajo Practico 4\Falcioni.Facundo.2A.TP4\TestConsola\bin\Debug\WindowsForms.pdb
+C:\Users\Facu Falcioni\Desktop\UTN\tp_laboratorio_2\Trabajo Practico 4\Falcioni.Facundo.2A.TP4\TestConsola\bin\Debug\WindowsForms.exe.config
+C:\Users\Facu Falcioni\Desktop\UTN\tp_laboratorio_2\Trabajo Practico 4\Falcioni.Facundo.2A.TP4\TestConsola\bin\Debug\Entidades.pdb
+C:\Users\Facu Falcioni\Desktop\UTN\tp_laboratorio_2\Trabajo Practico 4\Falcioni.Facundo.2A.TP4\TestConsola\obj\Debug\TestConsola.csproj.CopyComplete
