@@ -25,7 +25,7 @@ namespace WindowsForms
 
             this.vendedora = new Vendedora();
             this.hiloSecundario = new Thread(this.ComprobarLista);
-            this.Iniciar+= IniciarHilo;
+            this.Iniciar += IniciarHilo;
             InitializeComponent();
             if (!this.ConfigurarDataAdapter())
             {
@@ -38,10 +38,8 @@ namespace WindowsForms
         }
 
 
-        public bool ConfigurarDataTable()
+        private void ConfigurarDataTable()
         {
-            bool correcto = false;
-
             this.tabla = new DataTable("historialVentas");
 
             this.tabla.Columns.Add("idVenta", typeof(int));
@@ -51,10 +49,6 @@ namespace WindowsForms
             this.tabla.Columns[0].AutoIncrement = true;
             this.tabla.Columns[0].AutoIncrementSeed = 1;
             this.tabla.Columns[0].AutoIncrementStep = 1;
-
-            correcto = true;
-
-            return correcto;
         }
 
         public bool ConfigurarDataAdapter()
@@ -67,12 +61,6 @@ namespace WindowsForms
                 this.conexion = new SqlConnection(Properties.Settings.Default.conexionBD);
 
                 this.dA.SelectCommand = new SqlCommand("SELECT * FROM [BaseTP4].[dbo].[historialVentas] ", this.conexion);
-                this.dA.InsertCommand = new SqlCommand("INSERT INTO [BaseTP4].[dbo].[historialVentas] (producto, marca, tipo, precio) VALUES (@producto, @marca, @tipo, @precio)", this.conexion);
-
-                this.dA.InsertCommand.Parameters.Add("@producto", SqlDbType.VarChar, 50, "producto");
-                this.dA.InsertCommand.Parameters.Add("@marca", SqlDbType.VarChar, 50, "marca");
-                this.dA.InsertCommand.Parameters.Add("@tipo", SqlDbType.VarChar, 50, "tipo");
-                this.dA.InsertCommand.Parameters.Add("@precio", SqlDbType.Float, 10, "precio");
             }
             catch (Exception e)
             {
@@ -85,45 +73,20 @@ namespace WindowsForms
 
         private void ConfigurarGrilla()
         {
-
-            //Coloco color de fondo para las filas
-            this.dataGridView1.RowsDefaultCellStyle.BackColor = Color.Wheat;
-
-            //Alterno colores
-            this.dataGridView1.AlternatingRowsDefaultCellStyle.BackColor = Color.BurlyWood;
-
-            //Pongo color de fondo a la grilla
-            this.dataGridView1.BackgroundColor = Color.Beige;
-
-            //Defino fuente para el encabezado y alineación del encabezado
+            this.dataGridView1.RowsDefaultCellStyle.BackColor = Color.Teal;
+            this.dataGridView1.AlternatingRowsDefaultCellStyle.BackColor = Color.Teal;
+            this.dataGridView1.BackgroundColor = Color.LightSalmon;
             this.dataGridView1.ColumnHeadersDefaultCellStyle.Font = new Font(dataGridView1.Font, FontStyle.Bold);
             this.dataGridView1.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
-
-            //Defino el color de las lineas de separación
-            this.dataGridView1.GridColor = Color.HotPink;
-
-            //La grilla será de sólo lectura
+            this.dataGridView1.GridColor = Color.LightSalmon;
             this.dataGridView1.ReadOnly = false;
-
-            //No permito la multiselección
             this.dataGridView1.MultiSelect = false;
-
-            //Selecciono toda la fila a la vez
             this.dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-
-            //Hago que las columnas ocupen todo el ancho del 'DataGrid'
             this.dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-
-            //Indico el color de la fila seleccionada
-            this.dataGridView1.RowsDefaultCellStyle.SelectionBackColor = Color.DarkOliveGreen;
+            this.dataGridView1.RowsDefaultCellStyle.SelectionBackColor = Color.Black;
             this.dataGridView1.RowsDefaultCellStyle.SelectionForeColor = Color.WhiteSmoke;
-
-            //No permito modificar desde la grilla
             this.dataGridView1.EditMode = DataGridViewEditMode.EditProgrammatically;
-
-            //Saco los encabezados de las filas
             this.dataGridView1.RowHeadersVisible = false;
-
             this.dataGridView1.AllowUserToAddRows = false;
         }
 
@@ -195,7 +158,7 @@ namespace WindowsForms
         /// <param name="e"></param>
         private void btnGuardarXml_Click(object sender, EventArgs e)
         {
-            if(Vendedora.GuardarXml(this.vendedora))
+            if (Vendedora.GuardarXml(this.vendedora))
             {
                 MessageBox.Show("ARCHIVO GUARDADO CON EXITO");
             }
@@ -203,15 +166,26 @@ namespace WindowsForms
 
         private void FrmDatos_FormClosing(object sender, FormClosingEventArgs e)
         {
-            try
+
+            DialogResult dialogResult = MessageBox.Show("¿Seguro que quiere salir del sistema? Si no realizo el UPDATE perdera los datos.", "Consulta",
+                                                        MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (dialogResult == DialogResult.No)
             {
-                if (this.hiloSecundario.IsAlive)
-                {
-                    hiloSecundario.Abort();
-                }
+                e.Cancel = true; //Cancela el cerrado del formulario
             }
-            catch (Exception)
+            else
             {
+                try
+                {
+                    if (this.hiloSecundario.IsAlive)
+                    {
+                        hiloSecundario.Abort();
+                    }
+                }
+                catch (Exception)
+                {
+                }
             }
         }
 
