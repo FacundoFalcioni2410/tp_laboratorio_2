@@ -13,6 +13,7 @@ namespace Entidades
         protected string marca;
         protected string tipo;
 
+        #region Constructores
         /// <summary>
         /// Constructor sin parametros para la serializacion XML
         /// </summary>
@@ -45,8 +46,9 @@ namespace Entidades
             this.precio = precio;
             this.marca = marca;
         }
+        #endregion
 
-
+        #region Propiedades
         /// <summary>
         /// Propiedad abstracta de solo lectura, obtiene el Tipo
         /// </summary>
@@ -115,7 +117,48 @@ namespace Entidades
                 this.nombreProducto = value;
             }
         }
+        #endregion
 
+        #region Metodo
+        /// <summary>
+        /// Se encarga de obtener los datos del producto
+        /// </summary>
+        /// <returns>Devuelve un string con los datos del producto</returns>
+        protected virtual string MostrarDatos()
+        {
+            StringBuilder sb = new StringBuilder();
+
+            sb.AppendLine("<--------------------------------------------------------------------------->");
+            sb.AppendFormat("CODIGO DE COMPRA: {0}\nPRODUCTO: {1}\nMARCA: {2}\nPRECIO: {3}", this.idVentaProducto, this.nombreProducto, this.marca, this.precio);
+            sb.AppendLine();
+
+            return sb.ToString();
+        }
+        #endregion
+
+        #region Sobrecarga de metodos
+        /// <summary>
+        /// Se encarga de obtener los datos del producto
+        /// </summary>
+        /// <returns>Devuelve un string con los datos del producto</returns>
+        public override string ToString()
+        {
+            return this.MostrarDatos();
+        }
+
+        /// <summary>
+        /// Sobreecarga del equals utiliza la sobrecarga del operador ==
+        /// </summary>
+        /// <param name="obj"></param>
+        /// <returns>Retorna true si son iguales, false si no lo son</returns>
+        public override bool Equals(object obj)
+        {
+            return obj is Producto && (Producto)obj == this;
+        }
+        #endregion
+
+
+        #region Sobrecarga de operadores
         /// <summary>
         /// Compara dos objetos de tipo Producto. Dos productos seran iguales si su id de venta son iguales
         /// </summary>
@@ -147,39 +190,6 @@ namespace Entidades
         {
             return !(p1 == p2);
         }
-
-        /// <summary>
-        /// Se encarga de obtener los datos del producto
-        /// </summary>
-        /// <returns>Devuelve un string con los datos del producto</returns>
-        protected virtual string MostrarDatos()
-        {
-            StringBuilder sb = new StringBuilder();
-
-            sb.AppendLine("<--------------------------------------------------------------------------->");
-            sb.AppendFormat("CODIGO DE COMPRA: {0}\nPRODUCTO: {1}\nMARCA: {2}\nPRECIO: {3}", this.idVentaProducto, this.nombreProducto, this.marca, this.precio);
-            sb.AppendLine();
-
-            return sb.ToString();
-        }
-
-        /// <summary>
-        /// Se encarga de obtener los datos del producto
-        /// </summary>
-        /// <returns>Devuelve un string con los datos del producto</returns>
-        public override string ToString()
-        {
-            return this.MostrarDatos();
-        }
-
-        /// <summary>
-        /// Sobreecarga del equals utiliza la sobrecarga del operador ==
-        /// </summary>
-        /// <param name="obj"></param>
-        /// <returns>Retorna true si son iguales, false si no lo son</returns>
-        public override bool Equals(object obj)
-        {
-            return obj is Producto && (Producto)obj == this;
-        }
+        #endregion
     }
 }

@@ -13,4 +13,3 @@ PRODUCTO: Teclado
 MARCA: Samsung
 PRECIO: 100
 TIPO: Accesorio
-

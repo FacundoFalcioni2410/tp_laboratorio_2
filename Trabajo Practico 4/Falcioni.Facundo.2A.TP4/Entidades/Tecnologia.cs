@@ -4,6 +4,7 @@ namespace Entidades
 {
     public class Tecnologia : Producto
     {
+        #region Constructores
         /// <summary>
         /// Constructor sin parametros para la serializacion XML
         /// </summary>
@@ -21,7 +22,9 @@ namespace Entidades
         public Tecnologia(int id, string nombreProducto, float precio, string marca) : base(id, nombreProducto, precio, marca)
         {
         }
+        #endregion
 
+        #region Propiedad
         /// <summary>
         /// Propiedad de lectura que devuelve un string con el valor "Tecnologia"
         /// </summary>
@@ -32,7 +35,9 @@ namespace Entidades
                 return "Tecnologia";
             }
         }
+        #endregion
 
+        #region Metodo
         /// <summary>
         /// Se encarga de obtener los datos del producto
         /// </summary>
@@ -45,7 +50,9 @@ namespace Entidades
             sb.AppendFormat("TIPO: {0}\n", this.Tipo);
             return sb.ToString();
         }
+        #endregion
 
+        #region Sobrecarga de metodos
         /// <summary>
         /// Se encarga de obtener los datos del producto
         /// </summary>
@@ -54,5 +61,6 @@ namespace Entidades
         {
             return this.MostrarDatos();
         }
+        #endregion
     }
 }

@@ -4,6 +4,7 @@ namespace Entidades
 {
     public class Accesorio : Producto
     {
+        #region Constructores
         /// <summary>
         /// Constructor sin parametros para la serializacion XML
         /// </summary>
@@ -22,6 +23,9 @@ namespace Entidades
         {
         }
 
+        #endregion
+
+        #region Propiedad
         /// <summary>
         /// Propiedad de lectura que devuelve un string con el valor "Accesorio"
         /// </summary>
@@ -33,6 +37,9 @@ namespace Entidades
             }
         }
 
+        #endregion
+
+        #region Metodo
         /// <summary>
         /// Se encarga de obtener los datos del producto
         /// </summary>
@@ -46,7 +53,9 @@ namespace Entidades
 
             return sb.ToString();
         }
+        #endregion
 
+        #region Sobrecarga de operadores
         /// <summary>
         /// Se encarga de obtener los datos del producto
         /// </summary>
@@ -55,5 +64,6 @@ namespace Entidades
         {
             return this.MostrarDatos();
         }
+        #endregion
     }
 }

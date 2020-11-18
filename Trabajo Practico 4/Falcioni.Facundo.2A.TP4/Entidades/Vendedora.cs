@@ -10,11 +10,21 @@ namespace Entidades
     {
         private List<Producto> listaDeProductos;
 
+        #region Constructor
+        /// <summary>
+        /// Creo una instancia de vendedora e instancio la lista
+        /// </summary>
         public Vendedora()
         {
             this.listaDeProductos = new List<Producto>();
         }
+        #endregion
 
+        #region Propiedades
+
+        /// <summary>
+        /// Propiedaded de lectua y escritura de la lista de productos
+        /// </summary>
         public List<Producto> ListaDeProductos
         {
             get
@@ -27,6 +37,9 @@ namespace Entidades
             }
         }
 
+        /// <summary>
+        /// Propiedaded de lectua del PrecioTotal
+        /// </summary>
         public float PrecioTotal
         {
             get
@@ -41,44 +54,13 @@ namespace Entidades
                 return buffer;
             }
         }
+        #endregion
 
-        public static bool operator ==(Vendedora v, Producto p)
-        {
-            bool iguales = false;
-
-            if ((object)v != null && (object)p != null)
-            {
-                foreach (Producto auxP in v.listaDeProductos)
-                {
-                    if (auxP.Equals(p))
-                    {
-                        iguales = true;
-                        break;
-                    }
-                }
-            }
-
-            return iguales;
-        }
-
-        public static bool operator !=(Vendedora v, Producto p)
-        {
-            return !(v == p);
-        }
-
-        public static Vendedora operator +(Vendedora v, Producto p)
-        {
-            if (v != p)
-            {
-                v.listaDeProductos.Add(p);
-            }
-            return v;
-        }
-
+        #region Metodo
         /// <summary>
         /// Serializa en formato XML los atributos del objeto Vendedora
         /// </summary>
-        /// <param name="uni">Objeto Vendedora</param>
+        /// <param name="vendedora">Objeto Vendedora</param>
         /// <returns>Retorna true si pudo serializar el objeto</returns>
         public static bool GuardarXml(Vendedora vendedora)
         {
@@ -99,7 +81,14 @@ namespace Entidades
 
             return vendedora;
         }
+        #endregion
 
+        #region Sobrecarga de metodos
+
+        /// <summary>
+        /// Genero un string con los datos de la vendedora
+        /// </summary>
+        /// <returns>Retorna string con los datos de la vendedora</returns>
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
@@ -113,24 +102,61 @@ namespace Entidades
 
             return sb.ToString();
         }
+        #endregion
 
-        public void ProcesandoCompra(object sender, EventArgs e)
+        #region Sobrecarga operadores
+
+        /// <summary>
+        /// Compara un objeto vendedora con un objeto producto
+        /// </summary>
+        /// <param name="v">Objeto Vendedora</param>
+        /// <param name="p">Objeto Producto</param>
+        /// <returns>Retorna true si el producto se encuentra en la lista de vendedora, caso contrario retorna false</returns>
+        public static bool operator ==(Vendedora v, Producto p)
         {
-            do
+            bool iguales = false;
+
+            if ((object)v != null && (object)p != null)
             {
+                foreach (Producto auxP in v.listaDeProductos)
+                {
+                    if (auxP.Equals(p))
+                    {
+                        iguales = true;
+                        break;
+                    }
+                }
+            }
 
-                Thread.Sleep(2000);
-            } while (true);
-
-            //this.InformaEstado.Invoke(this, System.EventArgs.Empty);
-            //Thread.Sleep(4000);
-
-            //this.estado = EEstado.EnViaje;
-            //this.InformaEstado.Invoke(this, System.EventArgs.Empty);
-            //Thread.Sleep(4000);
-
-            //this.estado = EEstado.Entregado;
-            //this.InformaEstado.Invoke(this, System.EventArgs.Empty);
+            return iguales;
         }
+
+        /// <summary>
+        /// Compara un objeto vendedora con un objeto producto
+        /// </summary>
+        /// <param name="v">Objeto Vendedora</param>
+        /// <param name="p">Objeto Producto</param>
+        /// <returns>Retorna false si el no producto se encuentra en la lista de vendedora, caso contrario retorna true</returns>
+        public static bool operator !=(Vendedora v, Producto p)
+        {
+            return !(v == p);
+        }
+
+        /// <summary>
+        /// Agrega un objeto Producto a la lista del objeto Vendedora, siempre y cuando este no se encuentre en la lista
+        /// </summary>
+        /// <param name="v">Objeto Vendedora</param>
+        /// <param name="p">Objeto Producto</param>
+        /// <returns></returns>
+        public static Vendedora operator +(Vendedora v, Producto p)
+        {
+            if (v != p)
+            {
+                v.listaDeProductos.Add(p);
+            }
+            return v;
+        }
+
+        #endregion
     }
 }

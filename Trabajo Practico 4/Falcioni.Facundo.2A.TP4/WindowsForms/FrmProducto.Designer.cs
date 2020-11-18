@@ -34,8 +34,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.labelPrecio = new System.Windows.Forms.Label();
             this.comboBoxMarca = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnAceptar = new System.Windows.Forms.Button();
+            this.btnCancelar = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.comboBoxTipo = new System.Windows.Forms.ComboBox();
             this.comboBoxAccesorios = new System.Windows.Forms.ComboBox();
@@ -111,29 +111,29 @@
             this.comboBoxMarca.Size = new System.Drawing.Size(121, 21);
             this.comboBoxMarca.TabIndex = 6;
             // 
-            // button1
+            // btnAceptar
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(12, 277);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(58, 33);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Aceptar";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnAceptar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAceptar.Location = new System.Drawing.Point(12, 277);
+            this.btnAceptar.Name = "btnAceptar";
+            this.btnAceptar.Size = new System.Drawing.Size(58, 33);
+            this.btnAceptar.TabIndex = 7;
+            this.btnAceptar.Text = "Aceptar";
+            this.btnAceptar.UseVisualStyleBackColor = false;
+            this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
             // 
-            // button2
+            // btnCancelar
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(88, 277);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(71, 33);
-            this.button2.TabIndex = 8;
-            this.button2.Text = "Cancelar";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnCancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelar.Location = new System.Drawing.Point(88, 277);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(71, 33);
+            this.btnCancelar.TabIndex = 8;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = false;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // label4
             // 
@@ -186,8 +186,8 @@
             this.Controls.Add(this.comboBoxAccesorios);
             this.Controls.Add(this.comboBoxTipo);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnCancelar);
+            this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.comboBoxMarca);
             this.Controls.Add(this.labelPrecio);
             this.Controls.Add(this.label3);
@@ -213,8 +213,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label labelPrecio;
         private System.Windows.Forms.ComboBox comboBoxMarca;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnAceptar;
+        private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox comboBoxTipo;
         private System.Windows.Forms.ComboBox comboBoxAccesorios;

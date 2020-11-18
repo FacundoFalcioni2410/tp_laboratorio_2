@@ -8,12 +8,20 @@ namespace WindowsForms
     {
         private Producto producto;
 
+        #region Constructor
+        /// <summary>
+        /// Instancio el FrmProducto
+        /// </summary>
         public FrmProducto()
         {
             InitializeComponent();
         }
+        #endregion
 
-        #region Propiedad (sólo lectura)
+        #region Propiedad
+        /// <summary>
+        /// Propiedad de solo lectura del producto del formulario
+        /// </summary>
         public Producto Producto
         {
             get
@@ -23,8 +31,13 @@ namespace WindowsForms
         }
         #endregion
 
-
-        private void button1_Click(object sender, EventArgs e)
+        #region Manejadores de eventos
+        /// <summary>
+        /// Verifico de que tipo es el producto que quiere ingresar el usuario para instanciarlo
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnAceptar_Click(object sender, EventArgs e)
         {
             if (comboBoxMarca.SelectedIndex == 0 || comboBoxMarca.SelectedIndex == 1 || comboBoxMarca.SelectedIndex == 2)
             {
@@ -41,11 +54,21 @@ namespace WindowsForms
             }
         }
 
+        /// <summary>
+        /// Al cargar el form el combo box de tipo esta por default en "Tecnologia"
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void frmProducto_Load(object sender, EventArgs e)
         {
             this.comboBoxTipo.SelectedIndex = 0;
         }
-
+    
+        /// <summary>
+        /// Si el indice de tipo es 0 muestro el combo box de productos de tipo Tecnologia, caso contrario muestro productos de tipo accesorio
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void comboBoxTipo_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (comboBoxTipo.SelectedIndex == 0)
@@ -62,6 +85,11 @@ namespace WindowsForms
             }
         }
 
+        /// <summary>
+        /// Dependiendo el producto seleccionado especifico el precio
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void comboBoxTeconologia_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (comboBoxTipo.SelectedIndex == 0)
@@ -81,11 +109,21 @@ namespace WindowsForms
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        /// <summary>
+        /// Al presionar el boton asigno un DialogResult.Cancel para que no se agrege el producto
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnCancelar_Click(object sender, EventArgs e)
         {
             this.DialogResult = DialogResult.Cancel;
         }
 
+        /// <summary>
+        /// Dependiendo el producto seleccionado especifico el precio
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void comboBoxAccesorios_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (comboBoxTipo.SelectedIndex == 1)
@@ -104,5 +142,6 @@ namespace WindowsForms
                 }
             }
         }
+        #endregion
     }
 }
