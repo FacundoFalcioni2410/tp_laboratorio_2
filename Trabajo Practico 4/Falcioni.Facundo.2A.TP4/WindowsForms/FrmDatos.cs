@@ -20,6 +20,10 @@ namespace WindowsForms
 
         public event DelegadoHilo Iniciar;
 
+        /// <summary>
+        /// Constructor del form datos, dentro se configura el data adapter, data table y se asocia al evento el metodo que inicia el
+        /// hilo secundario
+        /// </summary>
         public FrmDatos()
         {
 
@@ -38,6 +42,9 @@ namespace WindowsForms
         }
 
 
+        /// <summary>
+        /// Se configura el data table.
+        /// </summary>
         private void ConfigurarDataTable()
         {
             this.tabla = new DataTable("historialVentas");
@@ -51,7 +58,11 @@ namespace WindowsForms
             this.tabla.Columns[0].AutoIncrementStep = 1;
         }
 
-        public bool ConfigurarDataAdapter()
+        /// <summary>
+        /// se configura el data adapter, la conexion a la base de datos y los comandos de insercion y seleccion
+        /// </summary>
+        /// <returns>Retorna true si se pudo configurar, caso contrario false</returns>
+        private bool ConfigurarDataAdapter()
         {
             bool todoOk = true;
 
@@ -59,7 +70,12 @@ namespace WindowsForms
             try
             {
                 this.conexion = new SqlConnection(Properties.Settings.Default.conexionBD);
+                this.dA.InsertCommand = new SqlCommand("INSERT INTO [BaseTP4].[dbo].[historialVentas] (producto, marca, tipo, precio) VALUES (@producto, @marca, @tipo, @precio)", this.conexion);
 
+                this.dA.InsertCommand.Parameters.Add("@producto", SqlDbType.VarChar, 50, "producto");
+                this.dA.InsertCommand.Parameters.Add("@marca", SqlDbType.VarChar, 50, "marca");
+                this.dA.InsertCommand.Parameters.Add("@tipo", SqlDbType.VarChar, 50, "tipo");
+                this.dA.InsertCommand.Parameters.Add("@precio", SqlDbType.Float, 10, "precio");
                 this.dA.SelectCommand = new SqlCommand("SELECT * FROM [BaseTP4].[dbo].[historialVentas] ", this.conexion);
             }
             catch (Exception e)
@@ -71,6 +87,10 @@ namespace WindowsForms
             return todoOk;
         }
 
+        /// <summary>
+        /// Se configura el datagridview dando un aspeco mas ameno y cambiando algunas caracteristicas para que el usuario
+        /// no pueda editar la grilla manualmente, entre otras
+        /// </summary>
         private void ConfigurarGrilla()
         {
             this.dataGridView1.RowsDefaultCellStyle.BackColor = Color.Teal;
@@ -90,6 +110,11 @@ namespace WindowsForms
             this.dataGridView1.AllowUserToAddRows = false;
         }
 
+        /// <summary>
+        /// Una vez se cargue el form se llena mediante el fill la data table, e inicia el hilo secundario
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void fmrDatos_Load(object sender, EventArgs e)
         {
             try
@@ -117,6 +142,11 @@ namespace WindowsForms
         }
 
 
+        /// <summary>
+        /// Se agrega una venta a la data table
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnAlta_Click(object sender, EventArgs e)
         {
             FrmProducto frm = new FrmProducto();
@@ -137,11 +167,21 @@ namespace WindowsForms
         }
 
 
+        /// <summary>
+        /// Se guarda en un archivo de texto la lista de productos
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnGuardarTexto_Click(object sender, EventArgs e)
         {
             vendedora.Guardar("Vendedora.txt", this.vendedora.ToString());
         }
 
+        /// <summary>
+        /// Se lee el archivo de texto que contiene la lista de productos
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnLeerTexto_Click(object sender, EventArgs e)
         {
             string datos;
@@ -164,6 +204,12 @@ namespace WindowsForms
             }
         }
 
+        /// <summary>
+        /// Al cerrarse el form se pregunta si quiere realizarlo, si presiona que no quiere salir sigue ejecutando el programa sin problemas
+        /// caso contrario se cierra y se aborta el hilo secundario si este esta vivo
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void FrmDatos_FormClosing(object sender, FormClosingEventArgs e)
         {
 
@@ -189,6 +235,10 @@ namespace WindowsForms
             }
         }
 
+        /// <summary>
+        /// Metodo asociado al hilo, cada 2 segundos comprueba si la lista de productos es distinta a la cantidad de rows en el
+        /// datagridview, de ser asi se actualiza la lista de productos con el contenido nuevo.
+        /// </summary>
         private void ComprobarLista()
         {
             do
@@ -222,6 +272,9 @@ namespace WindowsForms
 
         }
 
+        /// <summary>
+        /// Metodo encargado de iniciar el hilo comprobando siempre que este muerto antes de iniciarlo
+        /// </summary>
         private void IniciarHilo()
         {
             if (!this.hiloSecundario.IsAlive)
@@ -234,6 +287,9 @@ namespace WindowsForms
             }
         }
 
+        /// <summary>
+        /// Metodo mediante el cual se carga la lista con los elementos del datagridview
+        /// </summary>
         private void CargarLista()
         {
             Producto p = default;

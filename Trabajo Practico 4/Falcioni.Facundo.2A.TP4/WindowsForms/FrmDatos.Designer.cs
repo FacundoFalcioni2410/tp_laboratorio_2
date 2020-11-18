@@ -36,7 +36,6 @@
             this.btnLeerTexto = new System.Windows.Forms.Button();
             this.btnGuardarXml = new System.Windows.Forms.Button();
             this.labelInforma = new System.Windows.Forms.Label();
-            this.btnSalir = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -126,24 +125,12 @@
             this.labelInforma.Size = new System.Drawing.Size(265, 57);
             this.labelInforma.TabIndex = 8;
             // 
-            // btnSalir
-            // 
-            this.btnSalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSalir.Location = new System.Drawing.Point(675, 384);
-            this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(101, 47);
-            this.btnSalir.TabIndex = 9;
-            this.btnSalir.Text = "Salir";
-            this.btnSalir.UseVisualStyleBackColor = false;
-            // 
             // FrmDatos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Teal;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.labelInforma);
             this.Controls.Add(this.btnGuardarXml);
             this.Controls.Add(this.btnLeerTexto);
@@ -153,6 +140,9 @@
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.dataGridView1);
             this.ForeColor = System.Drawing.Color.Black;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FrmDatos";
             this.Text = "VENTAS";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmDatos_FormClosing);
@@ -173,7 +163,6 @@
         private System.Windows.Forms.Button btnLeerTexto;
         private System.Windows.Forms.Button btnGuardarXml;
         private System.Windows.Forms.Label labelInforma;
-        private System.Windows.Forms.Button btnSalir;
     }
 }
 
