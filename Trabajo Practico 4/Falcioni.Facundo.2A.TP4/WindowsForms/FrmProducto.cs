@@ -55,13 +55,14 @@ namespace WindowsForms
         }
 
         /// <summary>
-        /// Al cargar el form el combo box de tipo esta por default en "Tecnologia"
+        /// Al cargar el form el combo box de tipo y marca tienen un valor por default
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void frmProducto_Load(object sender, EventArgs e)
         {
             this.comboBoxTipo.SelectedIndex = 0;
+            this.comboBoxMarca.SelectedIndex = 0;
         }
     
         /// <summary>

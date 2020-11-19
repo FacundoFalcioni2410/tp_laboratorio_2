@@ -1,6 +1,6 @@
 VENDEDORA:
-CANTIDAD: 3
-PRECIO TOTAL: 470
+CANTIDAD: 4
+PRECIO TOTAL: 645
 <--------------------------------------------------------------------------->
 CODIGO DE COMPRA: 1
 PRODUCTO: Celular
@@ -14,8 +14,14 @@ MARCA: Asus
 PRECIO: 120
 TIPO: Accesorio
 <--------------------------------------------------------------------------->
-CODIGO DE COMPRA: 3
+CODIGO DE COMPRA: 7
 PRODUCTO: Celular
 MARCA: Apple
+PRECIO: 175
+TIPO: Tecnologia
+<--------------------------------------------------------------------------->
+CODIGO DE COMPRA: 8
+PRODUCTO: Celular
+MARCA: Samsung
 PRECIO: 175
 TIPO: Tecnologia

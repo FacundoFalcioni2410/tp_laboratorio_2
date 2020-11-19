@@ -183,7 +183,7 @@ namespace WindowsForms
         }
         #endregion
 
-        #region Metodo
+        #region Metodos
 
         /// <summary>
         /// Metodo asociado al hilo, cada 2 segundos comprueba si la lista de productos es distinta a la cantidad de rows en el
