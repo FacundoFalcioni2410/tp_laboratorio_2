@@ -8,14 +8,19 @@ namespace Entidades
 {
     public class ProductoSinMarcaException : Exception
     {
+        /// <summary>
+        /// Constructor por default que llama al constructor base
+        /// </summary>
         public ProductoSinMarcaException() : base()
-        {
-                
+        {  
         }
 
+        /// <summary>
+        /// Constructor que le pasa un mensaje al constructor base
+        /// </summary>
+        /// <param name="mensaje">mensaje a pasar al constructor base</param>
         public ProductoSinMarcaException(string mensaje) : base(mensaje)
         {
-
         }
     }
 }
