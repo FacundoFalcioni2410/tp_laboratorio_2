@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="Accesorio.cs" />
     <Compile Include="MetodoExtension.cs" />
+    <Compile Include="ProductoSinMarcaException.cs" />
     <Compile Include="Tecnologia.cs" />
     <Compile Include="Producto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

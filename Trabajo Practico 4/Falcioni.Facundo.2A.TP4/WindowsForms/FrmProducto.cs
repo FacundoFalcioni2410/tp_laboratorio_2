@@ -39,30 +39,40 @@ namespace WindowsForms
         /// <param name="e"></param>
         private void btnAceptar_Click(object sender, EventArgs e)
         {
-            if (comboBoxMarca.SelectedIndex == 0 || comboBoxMarca.SelectedIndex == 1 || comboBoxMarca.SelectedIndex == 2)
+            try
             {
-                if (comboBoxTipo.SelectedIndex == 0)
+                if (comboBoxMarca.SelectedIndex == 0 || comboBoxMarca.SelectedIndex == 1 || comboBoxMarca.SelectedIndex == 2)
                 {
-                    this.producto = new Tecnologia(0, comboBoxTeconologia.Text, float.Parse(labelPrecio.Text), comboBoxMarca.Text);
+                    if (comboBoxTipo.SelectedIndex == 0)
+                    {
+                        this.producto = new Tecnologia(0, comboBoxTeconologia.Text, float.Parse(labelPrecio.Text), comboBoxMarca.Text);
+                    }
+                    else
+                    {
+                        this.producto = new Accesorio(0, comboBoxAccesorios.Text, float.Parse(labelPrecio.Text), comboBoxMarca.Text);
+                    }
+
+                    this.DialogResult = DialogResult.OK;
                 }
                 else
                 {
-                    this.producto = new Accesorio(0, comboBoxAccesorios.Text, float.Parse(labelPrecio.Text), comboBoxMarca.Text);
+                    throw new ProductoSinMarcaException("DEBE INGRESAR LA MARCA DEL PRODUCTO");
                 }
-
-                this.DialogResult = DialogResult.OK;
+            }
+            catch(ProductoSinMarcaException ex)
+            {
+                MessageBox.Show(ex.Message, "ERROR",MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
         /// <summary>
-        /// Al cargar el form el combo box de tipo y marca tienen un valor por default
+        /// Al cargar el form el combo box de tipo tienen un valor por default
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void frmProducto_Load(object sender, EventArgs e)
         {
             this.comboBoxTipo.SelectedIndex = 0;
-            this.comboBoxMarca.SelectedIndex = 0;
         }
     
         /// <summary>
