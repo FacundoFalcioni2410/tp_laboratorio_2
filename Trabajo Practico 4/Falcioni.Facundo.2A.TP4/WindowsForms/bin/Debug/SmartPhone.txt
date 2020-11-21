@@ -1,0 +1,73 @@
+VENDEDORA:
+CANTIDAD: 10
+PRECIO TOTAL: 2600
+<--------------------------------------------------------------------------->
+CODIGO DE COMPRA: 1
+PRODUCTO: Ace Core Prime
+MARCA: Apple
+PRECIO: 280
+SISTEMA OPERATIVO: iOS
+MEMORIA: 64GB
+<--------------------------------------------------------------------------->
+CODIGO DE COMPRA: 2
+PRODUCTO: Prime Core
+MARCA: Xiaomi
+PRECIO: 220
+SISTEMA OPERATIVO: Android
+MEMORIA: 16GB
+<--------------------------------------------------------------------------->
+CODIGO DE COMPRA: 3
+PRODUCTO: Grand Prime Plus
+MARCA: Xiaomi
+PRECIO: 220
+SISTEMA OPERATIVO: iOS
+MEMORIA: 16GB
+<--------------------------------------------------------------------------->
+CODIGO DE COMPRA: 4
+PRODUCTO: Grand Prime Plus
+MARCA: Xiaomi
+PRECIO: 280
+SISTEMA OPERATIVO: iOS
+MEMORIA: 16GB
+<--------------------------------------------------------------------------->
+CODIGO DE COMPRA: 5
+PRODUCTO: Grand Prime Plus
+MARCA: Samsung
+PRECIO: 220
+SISTEMA OPERATIVO: iOS
+MEMORIA: 16GB
+<--------------------------------------------------------------------------->
+CODIGO DE COMPRA: 6
+PRODUCTO: Prime Core
+MARCA: Samsung
+PRECIO: 260
+SISTEMA OPERATIVO: Android
+MEMORIA: 16GB
+<--------------------------------------------------------------------------->
+CODIGO DE COMPRA: 7
+PRODUCTO: Grand Prime Plus
+MARCA: Apple
+PRECIO: 280
+SISTEMA OPERATIVO: iOS
+MEMORIA: 16GB
+<--------------------------------------------------------------------------->
+CODIGO DE COMPRA: 8
+PRODUCTO: Grand Prime Plus
+MARCA: Xiaomi
+PRECIO: 280
+SISTEMA OPERATIVO: iOS
+MEMORIA: 16GB
+<--------------------------------------------------------------------------->
+CODIGO DE COMPRA: 9
+PRODUCTO: Grand Prime Plus
+MARCA: Apple
+PRECIO: 280
+SISTEMA OPERATIVO: iOS
+MEMORIA: 16GB
+<--------------------------------------------------------------------------->
+CODIGO DE COMPRA: 10
+PRODUCTO: Grand Prime Plus
+MARCA: Xiaomi
+PRECIO: 280
+SISTEMA OPERATIVO: iOS
+MEMORIA: 16GB

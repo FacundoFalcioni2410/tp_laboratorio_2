@@ -3,15 +3,14 @@ using System.Xml.Serialization;
 
 namespace Entidades
 {
-    [XmlInclude(typeof(Accesorio))]
-    [XmlInclude(typeof(Tecnologia))]
+    [XmlInclude(typeof(Pantalla))]
+    [XmlInclude(typeof(SmartPhone))]
     public abstract class Producto
     {
         protected int idVentaProducto;
         protected string nombreProducto;
         protected float precio;
         protected string marca;
-        protected string tipo;
 
         #region Constructores
         /// <summary>
@@ -49,14 +48,6 @@ namespace Entidades
         #endregion
 
         #region Propiedades
-        /// <summary>
-        /// Propiedad abstracta de solo lectura, obtiene el Tipo
-        /// </summary>
-        public abstract string Tipo
-        {
-            get;
-        }
-
         /// <summary>
         /// Propiedad de lectura y escritura del id de venta
         /// </summary>

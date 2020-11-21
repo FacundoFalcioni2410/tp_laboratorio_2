@@ -61,25 +61,61 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FrmDatos.cs">
+    <Compile Include="FrmPantalla.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmDatos.Designer.cs">
-      <DependentUpon>FrmDatos.cs</DependentUpon>
+    <Compile Include="FrmPantalla.Designer.cs">
+      <DependentUpon>FrmPantalla.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmProducto.cs">
+    <Compile Include="FrmDatosPantalla.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmProducto.Designer.cs">
-      <DependentUpon>FrmProducto.cs</DependentUpon>
+    <Compile Include="FrmDatosPantalla.Designer.cs">
+      <DependentUpon>FrmDatosPantalla.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPrincipal.Designer.cs">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mostrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mostrar.Designer.cs">
+      <DependentUpon>Mostrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDatosSmartPhone.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDatosSmartPhone.Designer.cs">
+      <DependentUpon>FrmDatosSmartPhone.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSmartPhone.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSmartPhone.Designer.cs">
+      <DependentUpon>FrmSmartPhone.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FrmDatos.resx">
-      <DependentUpon>FrmDatos.cs</DependentUpon>
+    <EmbeddedResource Include="FrmPantalla.resx">
+      <DependentUpon>FrmPantalla.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmProducto.resx">
-      <DependentUpon>FrmProducto.cs</DependentUpon>
+    <EmbeddedResource Include="FrmDatosPantalla.resx">
+      <DependentUpon>FrmDatosPantalla.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPrincipal.resx">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mostrar.resx">
+      <DependentUpon>Mostrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDatosSmartPhone.resx">
+      <DependentUpon>FrmDatosSmartPhone.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSmartPhone.resx">
+      <DependentUpon>FrmSmartPhone.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

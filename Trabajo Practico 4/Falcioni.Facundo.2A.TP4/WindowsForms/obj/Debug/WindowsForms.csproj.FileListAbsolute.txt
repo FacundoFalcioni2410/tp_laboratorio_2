@@ -78,3 +78,25 @@ C:\Users\Facu Falcioni\Desktop\UTN\tp_laboratorio_2\Trabajo Practico 4\Falcioni.
 C:\Users\Facu Falcioni\Desktop\UTN\tp_laboratorio_2\Trabajo Practico 4\Falcioni.Facundo.2A.TP4\WindowsForms\obj\Debug\WindowsForms.csproj.CopyComplete
 C:\Users\Facu Falcioni\Desktop\UTN\tp_laboratorio_2\Trabajo Practico 4\Falcioni.Facundo.2A.TP4\WindowsForms\obj\Debug\WindowsForms.exe
 C:\Users\Facu Falcioni\Desktop\UTN\tp_laboratorio_2\Trabajo Practico 4\Falcioni.Facundo.2A.TP4\WindowsForms\obj\Debug\WindowsForms.pdb
+C:\Users\Facu Falcioni\Desktop\UTN\tp_laboratorio_2\Trabajo Practico 4\Falcioni.Facundo.2A.TP4\WindowsForms\obj\Debug\WindowsForms.Mostrar.resources
+C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\tp_laboratorio_2\Trabajo Practico 4\Falcioni.Facundo.2A.TP4\WindowsForms\obj\Debug\WindowsForms.csprojAssemblyReference.cache
+C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\tp_laboratorio_2\Trabajo Practico 4\Falcioni.Facundo.2A.TP4\WindowsForms\obj\Debug\WindowsForms.FrmPantalla.resources
+C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\tp_laboratorio_2\Trabajo Practico 4\Falcioni.Facundo.2A.TP4\WindowsForms\obj\Debug\WindowsForms.FrmDatosPantalla.resources
+C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\tp_laboratorio_2\Trabajo Practico 4\Falcioni.Facundo.2A.TP4\WindowsForms\obj\Debug\WindowsForms.FrmPrincipal.resources
+C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\tp_laboratorio_2\Trabajo Practico 4\Falcioni.Facundo.2A.TP4\WindowsForms\obj\Debug\WindowsForms.Mostrar.resources
+C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\tp_laboratorio_2\Trabajo Practico 4\Falcioni.Facundo.2A.TP4\WindowsForms\obj\Debug\WindowsForms.FrmDatosSmartPhone.resources
+C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\tp_laboratorio_2\Trabajo Practico 4\Falcioni.Facundo.2A.TP4\WindowsForms\obj\Debug\WindowsForms.FrmSmartPhone.resources
+C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\tp_laboratorio_2\Trabajo Practico 4\Falcioni.Facundo.2A.TP4\WindowsForms\obj\Debug\WindowsForms.Properties.Resources.resources
+C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\tp_laboratorio_2\Trabajo Practico 4\Falcioni.Facundo.2A.TP4\WindowsForms\obj\Debug\WindowsForms.csproj.GenerateResource.cache
+C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\tp_laboratorio_2\Trabajo Practico 4\Falcioni.Facundo.2A.TP4\WindowsForms\obj\Debug\WindowsForms.csproj.CoreCompileInputs.cache
+C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\tp_laboratorio_2\Trabajo Practico 4\Falcioni.Facundo.2A.TP4\WindowsForms\obj\Debug\WindowsForms.exe
+C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\tp_laboratorio_2\Trabajo Practico 4\Falcioni.Facundo.2A.TP4\WindowsForms\obj\Debug\WindowsForms.pdb
+C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\tp_laboratorio_2\Trabajo Practico 4\Falcioni.Facundo.2A.TP4\WindowsForms\bin\Debug\WindowsForms.exe.config
+C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\tp_laboratorio_2\Trabajo Practico 4\Falcioni.Facundo.2A.TP4\WindowsForms\bin\Debug\WindowsForms.exe
+C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\tp_laboratorio_2\Trabajo Practico 4\Falcioni.Facundo.2A.TP4\WindowsForms\bin\Debug\WindowsForms.pdb
+C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\tp_laboratorio_2\Trabajo Practico 4\Falcioni.Facundo.2A.TP4\WindowsForms\bin\Debug\Archivos.dll
+C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\tp_laboratorio_2\Trabajo Practico 4\Falcioni.Facundo.2A.TP4\WindowsForms\bin\Debug\Entidades.dll
+C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\tp_laboratorio_2\Trabajo Practico 4\Falcioni.Facundo.2A.TP4\WindowsForms\bin\Debug\Archivos.pdb
+C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\tp_laboratorio_2\Trabajo Practico 4\Falcioni.Facundo.2A.TP4\WindowsForms\bin\Debug\Entidades.pdb
+C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\tp_laboratorio_2\Trabajo Practico 4\Falcioni.Facundo.2A.TP4\WindowsForms\bin\Debug\Entidades.dll.config
+C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\tp_laboratorio_2\Trabajo Practico 4\Falcioni.Facundo.2A.TP4\WindowsForms\obj\Debug\WindowsForms.csproj.CopyComplete

@@ -14,18 +14,24 @@ namespace TestConsola
     {
         static void Main(string[] args)
         {
-            Vendedora v = new Vendedora();
+            Vendedora celulares = new Vendedora();
+            Vendedora pantallas = new Vendedora();
             DataTable tabla = new DataTable("historialVentas");
             SqlDataAdapter dA = new SqlDataAdapter();
             SqlConnection conexion = new SqlConnection(Properties.Settings.Default.conexionBD);
-            Tecnologia t1 = new Tecnologia(1, "Notebook", 520, "Asus");
-            Accesorio a1 = new Accesorio(2, "Teclado", 100, "Samsung");
-            Accesorio a2 = new Accesorio(1, "Celular", 175, "Apple");
-            Tecnologia t2 = new Tecnologia(3, "Notebook", 520, "Asus");
-            Accesorio a3 = new Accesorio(4, "Teclado", 100, "Samsung");
+            SmartPhone s= new SmartPhone(1, "Galaxy Core", 240, "Apple", ESistemaOperativo.iOS, EMemoria.GB32);
+            Pantalla p1 = new Pantalla(1,"Monitor",450,"Samsung",EPulgadas.P32,EResolucion.P1080);
+            Pantalla p2 = new Pantalla(1, "Monitor", 450, "Samsung", EPulgadas.P32, EResolucion.P1080);
+            SmartPhone s2 = new SmartPhone(1, "Galaxy Plus", 220, "Samsung", ESistemaOperativo.Android, EMemoria.GB16);
+            Pantalla p3 = new Pantalla(1, "Television", 500, "LG", EPulgadas.P32, EResolucion.K4);
 
-            v += t1;
-            v += a1;
+            celulares += s;
+            celulares += s2;
+
+            pantallas += p1;
+            pantallas += p2;
+            pantallas += p3;
+            
             
             try
             {
@@ -64,13 +70,14 @@ namespace TestConsola
             {
                 conexion = new SqlConnection(Properties.Settings.Default.conexionBD);
 
-                dA.SelectCommand = new SqlCommand("SELECT * FROM [BaseTP4].[dbo].[historialVentas] ", conexion);
-                dA.InsertCommand = new SqlCommand("INSERT INTO [BaseTP4].[dbo].[historialVentas] (producto, marca, tipo, precio) VALUES (@producto, @marca, @tipo, @precio)", conexion);
+                dA.SelectCommand = new SqlCommand("SELECT * FROM [BaseTP4].[dbo].[pantallas] ", conexion);
+                dA.InsertCommand = new SqlCommand("INSERT INTO [BaseTP4].[dbo].[historialVentas] (producto, marca, resolucion, pulgadas, precio) VALUES (@producto, @marca, @resolucion, @pulgadas, @precio)", conexion);
 
                 dA.InsertCommand.Parameters.Add("@producto", SqlDbType.VarChar, 50, "producto");
                 dA.InsertCommand.Parameters.Add("@marca", SqlDbType.VarChar, 50, "marca");
-                dA.InsertCommand.Parameters.Add("@tipo", SqlDbType.VarChar, 50, "tipo");
+                dA.InsertCommand.Parameters.Add("@pulgadas", SqlDbType.VarChar, 50, "pulgadas");
                 dA.InsertCommand.Parameters.Add("@precio", SqlDbType.Float, 10, "precio");
+                dA.InsertCommand.Parameters.Add("@resolucion", SqlDbType.VarChar, 50, "resolucion");
 
                 Console.WriteLine("DATA ADAPTER CONFIGURADO CON EXITO");
             }
@@ -108,7 +115,7 @@ namespace TestConsola
 
             //INTENTO LA ESCRITURA Y LECTURA DE ARCHIVOS .TXT Y .XML
 
-            if (v.Guardar("Vendedora.txt", v.ToString()))
+            if (pantallas.Guardar("pantallas.txt", pantallas.ToString()))
             {
                 Console.WriteLine("ARCHIVO CREADO CON EXITO");
             }
@@ -119,7 +126,7 @@ namespace TestConsola
 
             string datos;
 
-            if (v.Leer("Vendedora.txt", out datos))
+            if (pantallas.Leer("pantallas.txt", out datos))
             {
                 Console.WriteLine(datos);
             }
@@ -131,14 +138,14 @@ namespace TestConsola
             Console.ReadKey(true);
             Console.Clear();
 
-            if (Vendedora.GuardarXml(v))
+            if (Vendedora.GuardarXml("SmartPhone.xml",pantallas))
             {
                 Console.WriteLine("VENDEDORA SERIALIZADA CON EXITO");
             }
 
             Vendedora v2 = new Vendedora();
 
-            v2 = Vendedora.LeerXml();
+            v2 = Vendedora.LeerXml("SmartPhone.xml");
 
             Console.WriteLine(v2.ToString());
 

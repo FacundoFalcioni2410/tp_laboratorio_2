@@ -34,3 +34,13 @@ C:\Users\Facu Falcioni\Desktop\UTN\tp_laboratorio_2\Trabajo Practico 4\Falcioni.
 C:\Users\Facu Falcioni\Desktop\UTN\tp_laboratorio_2\Trabajo Practico 4\Falcioni.Facundo.2A.TP4\Entidades\obj\Debug\Entidades.csproj.CopyComplete
 C:\Users\Facu Falcioni\Desktop\UTN\tp_laboratorio_2\Trabajo Practico 4\Falcioni.Facundo.2A.TP4\Entidades\obj\Debug\Entidades.dll
 C:\Users\Facu Falcioni\Desktop\UTN\tp_laboratorio_2\Trabajo Practico 4\Falcioni.Facundo.2A.TP4\Entidades\obj\Debug\Entidades.pdb
+C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\tp_laboratorio_2\Trabajo Practico 4\Falcioni.Facundo.2A.TP4\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache
+C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\tp_laboratorio_2\Trabajo Practico 4\Falcioni.Facundo.2A.TP4\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\tp_laboratorio_2\Trabajo Practico 4\Falcioni.Facundo.2A.TP4\Entidades\obj\Debug\Entidades.dll
+C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\tp_laboratorio_2\Trabajo Practico 4\Falcioni.Facundo.2A.TP4\Entidades\obj\Debug\Entidades.pdb
+C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\tp_laboratorio_2\Trabajo Practico 4\Falcioni.Facundo.2A.TP4\Entidades\bin\Debug\Entidades.dll.config
+C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\tp_laboratorio_2\Trabajo Practico 4\Falcioni.Facundo.2A.TP4\Entidades\bin\Debug\Entidades.dll
+C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\tp_laboratorio_2\Trabajo Practico 4\Falcioni.Facundo.2A.TP4\Entidades\bin\Debug\Entidades.pdb
+C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\tp_laboratorio_2\Trabajo Practico 4\Falcioni.Facundo.2A.TP4\Entidades\bin\Debug\Archivos.dll
+C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\tp_laboratorio_2\Trabajo Practico 4\Falcioni.Facundo.2A.TP4\Entidades\bin\Debug\Archivos.pdb
+C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\tp_laboratorio_2\Trabajo Practico 4\Falcioni.Facundo.2A.TP4\Entidades\obj\Debug\Entidades.csproj.CopyComplete

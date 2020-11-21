@@ -2,7 +2,6 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
-using System.Threading;
 
 namespace Entidades
 {
@@ -38,7 +37,7 @@ namespace Entidades
         }
 
         /// <summary>
-        /// Propiedaded de lectua del PrecioTotal
+        /// Propiedaded de lectua del PrecioProductootal
         /// </summary>
         public float PrecioTotal
         {
@@ -62,22 +61,22 @@ namespace Entidades
         /// </summary>
         /// <param name="vendedora">Objeto Vendedora</param>
         /// <returns>Retorna true si pudo serializar el objeto</returns>
-        public static bool GuardarXml(Vendedora vendedora)
+        public static bool GuardarXml(string path, Vendedora vendedora)
         {
             Serializacion<Vendedora> u = new Serializacion<Vendedora>();
-            return u.Guardar("Vendedora.xml", vendedora);
+            return u.Guardar(path, vendedora);
         }
 
         /// <summary>
         /// Lee archivo XML y lo graba en un objeto Vendedora
         /// </summary>
         /// <returns>Objeto Vendedora</returns>
-        public static Vendedora LeerXml()
+        public static Vendedora LeerXml(string path)
         {
             Serializacion<Vendedora> u = new Serializacion<Vendedora>();
             Vendedora vendedora = new Vendedora();
 
-            u.Leer("Vendedora.xml", out vendedora);
+            u.Leer(path, out vendedora);
 
             return vendedora;
         }
@@ -95,9 +94,9 @@ namespace Entidades
 
             sb.AppendLine("VENDEDORA:");
             sb.AppendFormat("CANTIDAD: {0}\nPRECIO TOTAL: {1}\n", this.listaDeProductos.Count, this.PrecioTotal);
-            foreach (Producto auxP in this.listaDeProductos)
+            foreach (Producto auxProducto in this.listaDeProductos)
             {
-                sb.Append(auxP.ToString());
+                sb.Append(auxProducto.ToString());
             }
 
             return sb.ToString();
@@ -118,9 +117,9 @@ namespace Entidades
 
             if ((object)v != null && (object)p != null)
             {
-                foreach (Producto auxP in v.listaDeProductos)
+                foreach (Producto auxProducto in v.listaDeProductos)
                 {
-                    if (auxP.Equals(p))
+                    if (auxProducto.Equals(p))
                     {
                         iguales = true;
                         break;

@@ -1,0 +1,115 @@
+VENDEDORA:
+CANTIDAD: 16
+PRECIO TOTAL: 5780
+<--------------------------------------------------------------------------->
+CODIGO DE COMPRA: 1
+PRODUCTO: Televisor
+MARCA: LG
+PRECIO: 400
+RESOLUCION: 1080p
+PULGADAS: 32
+<--------------------------------------------------------------------------->
+CODIGO DE COMPRA: 2
+PRODUCTO: Monitor
+MARCA: Samsung
+PRECIO: 450
+RESOLUCION: 1080p
+PULGADAS: 40
+<--------------------------------------------------------------------------->
+CODIGO DE COMPRA: 3
+PRODUCTO: Television
+MARCA: SAMSUNG
+PRECIO: 340
+RESOLUCION: 720p
+PULGADAS: 40
+<--------------------------------------------------------------------------->
+CODIGO DE COMPRA: 4
+PRODUCTO: Monitor
+MARCA: PHILIPS
+PRECIO: 450
+RESOLUCION: 1080p
+PULGADAS: 32
+<--------------------------------------------------------------------------->
+CODIGO DE COMPRA: 5
+PRODUCTO: Television
+MARCA: PHILIPS
+PRECIO: 340
+RESOLUCION: 720p
+PULGADAS: 40
+<--------------------------------------------------------------------------->
+CODIGO DE COMPRA: 6
+PRODUCTO: Television
+MARCA: LG
+PRECIO: 340
+RESOLUCION: 720p
+PULGADAS: 28
+<--------------------------------------------------------------------------->
+CODIGO DE COMPRA: 7
+PRODUCTO: Television
+MARCA: PHILIPS
+PRECIO: 340
+RESOLUCION: 720p
+PULGADAS: 28
+<--------------------------------------------------------------------------->
+CODIGO DE COMPRA: 8
+PRODUCTO: Television
+MARCA: PHILIPS
+PRECIO: 340
+RESOLUCION: 720p
+PULGADAS: 28
+<--------------------------------------------------------------------------->
+CODIGO DE COMPRA: 9
+PRODUCTO: Television
+MARCA: PHILIPS
+PRECIO: 340
+RESOLUCION: 720p
+PULGADAS: 28
+<--------------------------------------------------------------------------->
+CODIGO DE COMPRA: 10
+PRODUCTO: Television
+MARCA: PHILIPS
+PRECIO: 340
+RESOLUCION: 720p
+PULGADAS: 28
+<--------------------------------------------------------------------------->
+CODIGO DE COMPRA: 11
+PRODUCTO: Television
+MARCA: SAMSUNG
+PRECIO: 340
+RESOLUCION: 720p
+PULGADAS: 28
+<--------------------------------------------------------------------------->
+CODIGO DE COMPRA: 12
+PRODUCTO: Television
+MARCA: PHILIPS
+PRECIO: 340
+RESOLUCION: 720p
+PULGADAS: 40
+<--------------------------------------------------------------------------->
+CODIGO DE COMPRA: 13
+PRODUCTO: Television
+MARCA: SAMSUNG
+PRECIO: 340
+RESOLUCION: 720p
+PULGADAS: 28
+<--------------------------------------------------------------------------->
+CODIGO DE COMPRA: 14
+PRODUCTO: Television
+MARCA: SAMSUNG
+PRECIO: 340
+RESOLUCION: 720p
+PULGADAS: 28
+<--------------------------------------------------------------------------->
+CODIGO DE COMPRA: 15
+PRODUCTO: Television
+MARCA: SAMSUNG
+PRECIO: 400
+RESOLUCION: 1080p
+PULGADAS: 28
+<--------------------------------------------------------------------------->
+CODIGO DE COMPRA: 16
+PRODUCTO: Television
+MARCA: PHILIPS
+PRECIO: 340
+RESOLUCION: 720p
+PULGADAS: 28

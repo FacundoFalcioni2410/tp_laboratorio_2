@@ -6,22 +6,22 @@ using System.Data;
 
 namespace TestUnitarios
 {
-    [TestClass]
+    /*[TestClass]
     public class TestUnitarios
     {
         /// <summary>
         /// Pasa el test si los productos son iguales
         /// </summary>
-        [TestMethod]
+       [TestMethod]
         public void ComprobarFuncionamientoProductoIgualProducto()
         {
-            bool iguales;
-            Producto p1 = new Tecnologia(3, "Notebook", 520, "Asus");
-            Producto p2 = new Accesorio(3, "Auriculares", 100, "Samsung");
+     //       bool iguales;
+        //    Producto p1 = new Tecnologia(3, "Notebook", 520, "Asus");
+        //    Producto p2 = new Accesorio(3, "Auriculares", 100, "Samsung");
 
-            iguales = p1 == p2;
+        //    iguales = p1 == p2;
                 
-            Assert.IsTrue(iguales);
+       //     Assert.IsTrue(iguales);
         }
 
         /// <summary>
@@ -47,5 +47,5 @@ namespace TestUnitarios
             
             Assert.IsTrue(conexion.State == ConnectionState.Open);
         }
-    }
+    }*/
 }
