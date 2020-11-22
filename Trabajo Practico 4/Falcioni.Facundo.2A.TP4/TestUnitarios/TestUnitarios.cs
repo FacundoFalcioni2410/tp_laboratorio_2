@@ -6,7 +6,7 @@ using System.Data;
 
 namespace TestUnitarios
 {
-    /*[TestClass]
+    [TestClass]
     public class TestUnitarios
     {
         /// <summary>
@@ -15,13 +15,13 @@ namespace TestUnitarios
        [TestMethod]
         public void ComprobarFuncionamientoProductoIgualProducto()
         {
-     //       bool iguales;
-        //    Producto p1 = new Tecnologia(3, "Notebook", 520, "Asus");
-        //    Producto p2 = new Accesorio(3, "Auriculares", 100, "Samsung");
+            bool iguales;
+            SmartPhone s1 = new SmartPhone(1, "Galaxy Core", 240, "Apple", ESistemaOperativo.iOS, EMemoria.GB32);
+            SmartPhone s2 = new SmartPhone(1, "Galaxy Plus", 220, "Samsung", ESistemaOperativo.Android, EMemoria.GB16);
 
-        //    iguales = p1 == p2;
+            iguales = s1 == s2;
                 
-       //     Assert.IsTrue(iguales);
+            Assert.IsTrue(iguales);
         }
 
         /// <summary>
@@ -32,7 +32,7 @@ namespace TestUnitarios
         {
             Vendedora v = new Vendedora();
 
-            Assert.IsTrue(Vendedora.GuardarXml(v));
+            Assert.IsTrue(Vendedora.GuardarXml("SmartPhone.xml",v));
         }
         
         /// <summary>
@@ -47,5 +47,5 @@ namespace TestUnitarios
             
             Assert.IsTrue(conexion.State == ConnectionState.Open);
         }
-    }*/
+    }
 }

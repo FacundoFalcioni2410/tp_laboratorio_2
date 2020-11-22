@@ -63,22 +63,9 @@ namespace WindowsForms
             }
         }
 
-        private void btnUpdate_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                this.dA.Update(this.tabla);
-                MessageBox.Show("Datos actualizados con exito");
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
-
 
         /// <summary>
-        /// Se agrega una venta a la data table
+        /// Se agrega una venta a la data table y se realiza el update del datagridview del form principal indicando que se sumo un producto
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -177,8 +164,8 @@ namespace WindowsForms
                 try
                 {
                     FrmPrincipal frm = new FrmPrincipal();
-                    this.EjecutarHilo.Invoke();
-                    frm.Show();
+                    this.EjecutarHilo.Invoke(); // aborto el hilo
+                    frm.Show(); // muesto el form principal
                 }
                 catch (Exception ex)
                 {
@@ -243,7 +230,7 @@ namespace WindowsForms
         }
 
         /// <summary>
-        /// Metodo mediante el cual se carga la lista con los elementos del datagridview
+        /// Metodo mediante el cual se carga la lista con los elementos del datagridview y realiza el update a la base de datos
         /// </summary>
         private void CargarLista()
         {

@@ -10,7 +10,7 @@ namespace WindowsForms
 
         #region Constructor
         /// <summary>
-        /// Instancio el FrmProducto
+        /// Instancio el FrmSmartPhone
         /// </summary>
         public FrmSmartPhone()
         {
@@ -20,7 +20,7 @@ namespace WindowsForms
 
         #region Propiedad
         /// <summary>
-        /// Propiedad de solo lectura del producto del formulario
+        /// Propiedad de solo lectura del smartphone del formulario
         /// </summary>
         public SmartPhone SmartPhone
         {
@@ -33,7 +33,7 @@ namespace WindowsForms
 
         #region Manejadores de eventos
         /// <summary>
-        /// Verifico de que tipo es el producto que quiere ingresar el usuario para instanciarlo
+        /// Verifico que el usuario haya ingresado una marca antes de agregarlo, caso contrario tiro excepcion
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -59,7 +59,7 @@ namespace WindowsForms
         }
 
         /// <summary>
-        /// Al cargar el form el combo box de tipo tienen un valor por default
+        /// Al cargar el form el combo box de producto, memoria y SO tienen un valor por default
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -80,12 +80,10 @@ namespace WindowsForms
         }
 
         /// <summary>
-        /// Dependiendo el producto seleccionado especifico el precio
+        /// Dependiendo la cantidad de memoria seleccionada especifico el precio
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-
-        #endregion
 
         private void comboBoxMemoria_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -102,5 +100,7 @@ namespace WindowsForms
                     break;
             }
         }
+
+        #endregion
     }
 }

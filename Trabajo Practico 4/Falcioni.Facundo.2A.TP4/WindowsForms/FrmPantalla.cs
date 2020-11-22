@@ -17,7 +17,7 @@ namespace WindowsForms
 
         #region Constructor
         /// <summary>
-        /// Instancio el FrmProducto
+        /// Instancio el FrmPantalla
         /// </summary>
         public FrmPantalla()
         {
@@ -27,7 +27,7 @@ namespace WindowsForms
 
         #region Propiedad
         /// <summary>
-        /// Propiedad de solo lectura del producto del formulario
+        /// Propiedad de solo lectura de la pantalla del formulario
         /// </summary>
         public Pantalla Pantalla
         {
@@ -40,7 +40,7 @@ namespace WindowsForms
 
         #region Manejadores de eventos
         /// <summary>
-        /// Verifico de que tipo es el producto que quiere ingresar el usuario para instanciarlo
+        /// Verifico que el usuario haya elegido marca antes de instanciar la pantalla, de no ser asi, lanzo una excepcion
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -64,14 +64,6 @@ namespace WindowsForms
                 MessageBox.Show(ex.Message, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
-        /// <summary>
-        /// Al cargar el form el combo box de tipo tienen un valor por default
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        
-        /// 
          
         
         /// <summary>
@@ -85,13 +77,10 @@ namespace WindowsForms
         }
 
         /// <summary>
-        /// Dependiendo el producto seleccionado especifico el precio
+        /// Doy un valor por default al combo box de Producto, pulgadas y resolucion al cargar el formulario
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-
-        #endregion
-
         private void FrmPantalla_Load(object sender, EventArgs e)
         {
             this.comboBoxProducto.SelectedIndex = 0;
@@ -99,6 +88,11 @@ namespace WindowsForms
             this.comboBoxResolucion.SelectedIndex = 0;
         }
 
+        /// <summary>
+        /// Dependiendo la resolucion seleccionada especifico el precio
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void comboBoxResolucion_SelectedIndexChanged(object sender, EventArgs e)
         {
             switch (this.comboBoxResolucion.SelectedIndex)
@@ -114,5 +108,7 @@ namespace WindowsForms
                     break;
             }
         }
+
+        #endregion
     }
 }

@@ -31,7 +31,7 @@ namespace Entidades
 
         #region Propiedad
         /// <summary>
-        /// Propiedad de lectura que devuelve un string con el valor "Tecnologia"
+        /// Propiedad de lectura del enumerado pero lo devuelve en formato String
         /// </summary>
         public string SistemaOperativo
         {
@@ -47,6 +47,9 @@ namespace Entidades
             }
         }
 
+        /// <summary>
+        /// Propiedad de lectura del enumerado pero lo devuelve en formato String
+        /// </summary>
         public string Memoria
         {
             get
@@ -66,6 +69,11 @@ namespace Entidades
 
         #region Metodos
 
+        /// <summary>
+        /// Realizo un mapeo del string para convertirlo en tipo ESistemaOperativo
+        /// </summary>
+        /// <param name="aux"></param>
+        /// <returns></returns>
         public static ESistemaOperativo MapeoSistemaOperativo(string aux)
         {
             switch (aux)
@@ -79,6 +87,11 @@ namespace Entidades
             }
         }
 
+        /// <summary>
+        /// Realizo un mapeo del string para convertirlo en tipo EMemoria
+        /// </summary>
+        /// <param name="aux"></param>
+        /// <returns></returns>
         public static EMemoria MapeoMemoria(string aux)
         {
             switch (aux)
@@ -93,9 +106,9 @@ namespace Entidades
         }
 
         /// <summary>
-        /// Se encarga de obtener los datos del producto
+        /// Se encarga de obtener los datos del SmartPhone
         /// </summary>
-        /// <returns>Devuelve un string con los datos del producto</returns>
+        /// <returns>Devuelve un string con los datos del SmartPhone</returns>
         protected override string MostrarDatos()
         {
             StringBuilder sb = new StringBuilder();
@@ -108,9 +121,9 @@ namespace Entidades
 
         #region Sobrecarga de metodos
         /// <summary>
-        /// Se encarga de obtener los datos del producto
+        /// Se encarga de obtener los datos del SmartPhone
         /// </summary>
-        /// <returns>Devuelve un string con los datos del producto</returns>
+        /// <returns>Devuelve un string con los datos del SmartPhone</returns>
         public override string ToString()
         {
             return this.MostrarDatos();

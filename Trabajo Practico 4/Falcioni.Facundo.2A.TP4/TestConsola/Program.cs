@@ -21,7 +21,7 @@ namespace TestConsola
             SqlConnection conexion = new SqlConnection(Properties.Settings.Default.conexionBD);
             SmartPhone s= new SmartPhone(1, "Galaxy Core", 240, "Apple", ESistemaOperativo.iOS, EMemoria.GB32);
             Pantalla p1 = new Pantalla(1,"Monitor",450,"Samsung",EPulgadas.P32,EResolucion.P1080);
-            Pantalla p2 = new Pantalla(1, "Monitor", 450, "Samsung", EPulgadas.P32, EResolucion.P1080);
+            Pantalla p2 = new Pantalla(2, "Monitor", 450, "Samsung", EPulgadas.P32, EResolucion.P1080);
             SmartPhone s2 = new SmartPhone(1, "Galaxy Plus", 220, "Samsung", ESistemaOperativo.Android, EMemoria.GB16);
             Pantalla p3 = new Pantalla(1, "Television", 500, "LG", EPulgadas.P32, EResolucion.K4);
 
@@ -70,8 +70,8 @@ namespace TestConsola
             {
                 conexion = new SqlConnection(Properties.Settings.Default.conexionBD);
 
-                dA.SelectCommand = new SqlCommand("SELECT * FROM [BaseTP4].[dbo].[pantallas] ", conexion);
-                dA.InsertCommand = new SqlCommand("INSERT INTO [BaseTP4].[dbo].[historialVentas] (producto, marca, resolucion, pulgadas, precio) VALUES (@producto, @marca, @resolucion, @pulgadas, @precio)", conexion);
+                dA.SelectCommand = new SqlCommand("SELECT * FROM [BaseTP4].[dbo].[pantalla] ", conexion);
+                dA.InsertCommand = new SqlCommand("INSERT INTO [BaseTP4].[dbo].[pantalla] (producto, marca, resolucion, pulgadas, precio) VALUES (@producto, @marca, @resolucion, @pulgadas, @precio)", conexion);
 
                 dA.InsertCommand.Parameters.Add("@producto", SqlDbType.VarChar, 50, "producto");
                 dA.InsertCommand.Parameters.Add("@marca", SqlDbType.VarChar, 50, "marca");

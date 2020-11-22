@@ -20,12 +20,14 @@ namespace Entidades
         }
 
         /// <summary>
-        /// Instancia un objeto de tipo Accesorio
+        /// Instancio objto de tipo Pantalla
         /// </summary>
         /// <param name="id"></param>
         /// <param name="nombreProducto"></param>
         /// <param name="precio"></param>
         /// <param name="marca"></param>
+        /// <param name="pulgadas"></param>
+        /// <param name="resolucion"></param>
         public Pantalla(int id, string nombreProducto, float precio, string marca,EPulgadas pulgadas, EResolucion resolucion) : base(id, nombreProducto, precio, marca)
         {
             this.resolucion = resolucion;
@@ -34,6 +36,9 @@ namespace Entidades
 
         #endregion
 
+        /// <summary>
+        /// Propiedad de lectura del enumerado que retorna un string
+        /// </summary>
         public string Resolucion
         {
             get
@@ -48,6 +53,9 @@ namespace Entidades
             }
         }
 
+        /// <summary>
+        /// Propiedad de lectura del enumerado retornado en formato string
+        /// </summary>
         public int Pulgada
         {
             get
@@ -66,6 +74,11 @@ namespace Entidades
 
         #region Metodos
 
+        /// <summary>
+        /// Realizo un mapeo del string para convertirlo en tipo EResolucion
+        /// </summary>
+        /// <param name="aux"></param>
+        /// <returns></returns>
         public static EResolucion MapeoResolucion(string aux)
         {
             switch (aux)
@@ -79,6 +92,11 @@ namespace Entidades
             }
         }
 
+        /// <summary>
+        /// Realizo un mapeo del string para convertirlo en tipo EPulgadas
+        /// </summary>
+        /// <param name="aux"></param>
+        /// <returns></returns>
         public static EPulgadas MapeoPulgadas(string aux)
         {
             switch (aux)
@@ -93,9 +111,9 @@ namespace Entidades
         }
 
         /// <summary>
-        /// Se encarga de obtener los datos del producto
+        /// Se encarga de obtener los datos de la Pantalla
         /// </summary>
-        /// <returns>Devuelve un string con los datos del producto</returns>
+        /// <returns>Devuelve un string con los datos del Pantalla</returns>
         protected override string MostrarDatos()
         {
             StringBuilder sb = new StringBuilder();
@@ -108,9 +126,9 @@ namespace Entidades
 
         #region Sobrecarga de metodos
         /// <summary>
-        /// Se encarga de obtener los datos del producto
+        /// Se encarga de obtener los datos del Pantalla
         /// </summary>
-        /// <returns>Devuelve un string con los datos del producto</returns>
+        /// <returns>Devuelve un string con los datos del Pantalla</returns>
         public override string ToString()
         {
             return this.MostrarDatos();

@@ -59,18 +59,6 @@ namespace WindowsForms
                 MessageBox.Show(ex.Message);
             }
         }
-        private void btnUpdate_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                this.dA.Update(this.tabla);
-                MessageBox.Show("Datos actualizados con exito");
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
 
 
         /// <summary>
@@ -174,8 +162,8 @@ namespace WindowsForms
                 try
                 {
                     FrmPrincipal frm = new FrmPrincipal();
-                    this.EjecutarHilo.Invoke();
-                    frm.Show();
+                    this.EjecutarHilo.Invoke(); //aborto el hilo
+                    frm.Show(); //muestro el form principal
                 }
                 catch (Exception ex)
                 {
@@ -239,7 +227,7 @@ namespace WindowsForms
         }
 
         /// <summary>
-        /// Metodo mediante el cual se carga la lista con los elementos del datagridview
+        /// Metodo mediante el cual se carga la lista con los elementos del datagridview y realiza el update a la base de datos
         /// </summary>
         private void CargarLista()
         {
@@ -265,10 +253,6 @@ namespace WindowsForms
             }
         }
         #endregion
-        /// <summary>
-        /// Se configura el datagridview dando un aspeco mas ameno y cambiando algunas caracteristicas para que el usuario
-        /// no pueda editar la grilla manualmente, entre otras
-        /// </summary>
 
     }
 }

@@ -12,6 +12,9 @@ namespace WindowsForms
 {
     public partial class Mostrar : Form
     {
+        /// <summary>
+        /// Genera una instancia del formulario
+        /// </summary>
         public Mostrar()
         {
             InitializeComponent();
