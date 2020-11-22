@@ -27,3 +27,4 @@ C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\tp_laboratorio_2\Trabaj
 C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\tp_laboratorio_2\Trabajo Practico 4\Falcioni.Facundo.2A.TP4\Archivos\obj\Debug\Archivos.csproj.CoreCompileInputs.cache
 C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\tp_laboratorio_2\Trabajo Practico 4\Falcioni.Facundo.2A.TP4\Archivos\obj\Debug\Archivos.dll
 C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\tp_laboratorio_2\Trabajo Practico 4\Falcioni.Facundo.2A.TP4\Archivos\obj\Debug\Archivos.pdb
+C:\Users\Facu Falcioni\Desktop\UTN\2do Cuatrimestre 2020\tp_laboratorio_2\Trabajo Practico 4\Falcioni.Facundo.2A.TP4\Archivos\obj\Debug\Archivos.csprojAssemblyReference.cache
