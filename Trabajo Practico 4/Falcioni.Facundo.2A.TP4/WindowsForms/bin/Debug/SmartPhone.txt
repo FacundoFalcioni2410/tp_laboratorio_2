@@ -1,6 +1,6 @@
 VENDEDORA:
-CANTIDAD: 2
-PRECIO TOTAL: 500
+CANTIDAD: 3
+PRECIO TOTAL: 760
 <--------------------------------------------------------------------------->
 CODIGO DE COMPRA: 1
 PRODUCTO: Ace Core Prime
@@ -15,3 +15,10 @@ MARCA: Xiaomi
 PRECIO: 220
 SISTEMA OPERATIVO: Android
 MEMORIA: 16GB
+<--------------------------------------------------------------------------->
+CODIGO DE COMPRA: 3
+PRODUCTO: Grand Ace
+MARCA: Samsung
+PRECIO: 260
+SISTEMA OPERATIVO: iOS
+MEMORIA: 32GB

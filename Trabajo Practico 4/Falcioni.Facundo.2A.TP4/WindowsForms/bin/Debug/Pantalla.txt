@@ -1,6 +1,6 @@
 VENDEDORA:
-CANTIDAD: 2
-PRECIO TOTAL: 850
+CANTIDAD: 3
+PRECIO TOTAL: 1300
 <--------------------------------------------------------------------------->
 CODIGO DE COMPRA: 1
 PRODUCTO: Televisor
@@ -12,6 +12,13 @@ PULGADAS: 32
 CODIGO DE COMPRA: 2
 PRODUCTO: Monitor
 MARCA: Samsung
+PRECIO: 450
+RESOLUCION: 1080p
+PULGADAS: 40
+<--------------------------------------------------------------------------->
+CODIGO DE COMPRA: 3
+PRODUCTO: Television
+MARCA: PHILIPS
 PRECIO: 450
 RESOLUCION: 1080p
 PULGADAS: 40

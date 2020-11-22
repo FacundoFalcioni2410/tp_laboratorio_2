@@ -22,15 +22,8 @@ namespace Archivos
                 using (XmlTextWriter writer = new XmlTextWriter(path, Encoding.UTF8))
                 {
                     XmlSerializer ser = new XmlSerializer(typeof(T));
-                    if(ser != null && writer != null)
-                    {
-                        ser.Serialize(writer, datos);
-                        guardado = true;
-                    }
-                    else
-                    {
-                        throw new ArchivosException("ERROR AL SERIALIZAR EL ARCHIVO");
-                    }
+                    ser.Serialize(writer, datos);
+                    guardado = true;
                 }
             }
             catch (Exception e)
@@ -57,20 +50,12 @@ namespace Archivos
             {
                 using (XmlTextReader reader = new XmlTextReader(path))
                 {
-                    
                     XmlSerializer ser = new XmlSerializer(typeof(T));
-                    if (ser != null && reader != null)
-                    {
-                        datos = (T)ser.Deserialize(reader);
-                        leido = true;
-                    }
-                    else
-                    {
-                        throw new ArchivosException("ERROR AL DESERIALIZAR EL ARCHIVO");
-                    }
+                    datos = (T)ser.Deserialize(reader);
+                    leido = true;
                 }
             }
-            catch (ArchivosException e)
+            catch (Exception e)
             {
                 Console.WriteLine(e.Message);
             }

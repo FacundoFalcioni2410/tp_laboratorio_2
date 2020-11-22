@@ -19,18 +19,11 @@ namespace Archivos
             {
                 using (StreamWriter sw = new StreamWriter(path))
                 {
-                    if (sw != null)
-                    {
-                        sw.Write(datos);
-                        guardado = true;
-                    }
-                    else
-                    {
-                        throw new ArchivosException("ERROR AL GUARDAR EL ARCHIVO");
-                    }
+                    sw.Write(datos);
+                    guardado = true;
                 }
             }
-            catch (ArchivosException e)
+            catch (Exception e)
             {
                 Console.WriteLine(e.Message);
             }
@@ -53,18 +46,11 @@ namespace Archivos
             {
                 using (StreamReader lector = new StreamReader(path))
                 {
-                    if(lector != null)
-                    {
-                        datos = lector.ReadToEnd();
-                        leido = true;
-                    }
-                    else
-                    {
-                        throw new ArchivosException("ERROR AL LEER EL ARCHIVO");
-                    }
+                    datos = lector.ReadToEnd();
+                    leido = true;
                 }
             }
-            catch (ArchivosException e)
+            catch (Exception e)
             {
                 Console.WriteLine(e.Message);
             }
